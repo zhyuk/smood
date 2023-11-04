@@ -70,13 +70,22 @@ button#ScrollTop {
     bottom: calc(100vw * 60 / 1920);
     width: calc(100vw * 70 / 1920);
     height: calc(100vw * 70 / 1920);
-    background: #F6701B;
-    border: none;
+    background: transparent;
+    border: solid 2px var(--color-orange);
     border-radius: 100%;
     font-size: 18px;
-    color: var(--color-white);
+    font-weight: 500;
+    color: var(--color-orange);
     cursor: pointer;
     z-index: 10;
+    opacity: 0.3;
+    transition: all .3s ease-in-out;
+}
+button#ScrollTop:hover {
+    background-color: var(--color-orange);
+    color: #FFF;
+    opacity: 1;
+
 }
 /* service1 */
 section#service1 {
