@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SMOO:D</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/index.css">
@@ -312,12 +313,51 @@
                 </div> <!-- main_box -->
 
                 <div class="container">
+                    <span class="top pretendard">아이의 관심 상품</span>
+                    <span class="left pretendard">아이에게 보내는 용돈</span>
+                    <span class="bottom pretendard">마이 페이지</span>
+                    <span class="right pretendard">메인 페이지</span>
+
                     <div class="top btn"></div>
-                    <div class="right btn"></div>
-                    <div class="bottom btn"></div>
                     <div class="left btn"></div>
-                    <div class="content"></div>
-                </div>
+                    <div class="bottom btn"></div>
+                    <div class="right btn active"></div>
+                    <div class="content">
+                        <img class="mockup mockup-top" src="./img/service5_img1.png" alt="관심상품 목업">
+                        <img class="mockup mockup-left" src="./img/service5_img2.png" alt="송금 목업">
+                        <img class="mockup mockup-bottom" src="./img/service5_img4.png" alt="마이 페이지 목업">
+                        <img class="mockup mockup-right active" src="./img/service5_img3.png" alt="메인 페이지 목업">
+                        <svg width="100" height="40" class="line13">
+                            <path d="M0 20 L80 20" fill="none" stroke="#FF850A" stroke-width="3" stroke-dasharray="7" />
+                            <circle cx="80" cy="20" r="10" stroke="#F6701B" stroke-width="3" fill="#FAAE7F" />
+                            <circle cx="80" cy="20" r="5" stroke="#F6701B" stroke-width="3" fill="#FFFFFF" />
+                        </svg>
+                        <div class="text pretendard text-top">
+                            <h1>아이의 관심 상품</h1>
+                            <p>아이의 관심상품<br>
+                                관심상품<br>
+                                관심상품</p>
+                        </div>
+                        <div class="text pretendard text-left">
+                            <h1>아이에게 보내는 용돈</h1>
+                            <p>아이에게 보내는 용돈<br>
+                                아이에게 보내는 용돈<br>
+                                아이에게 보내는 용돈</p>
+                        </div>
+                        <div class="text pretendard text-bottom">
+                            <h1>마이 페이지</h1>
+                            <p>마이 페이지<br>
+                                마이 페이지<br>
+                                마이 페이지</p>
+                        </div>
+                        <div class="text pretendard text-right active">
+                            <h1>메인 페이지</h1>
+                            <p>아이와 연동 후,<br>
+                                판매내역, 구매내역, 후기 등을<br>
+                                확인할 수 있어요!</p>
+                        </div>
+                    </div>
+                </div> <!-- container -->
 
             </article>
         </section>
@@ -421,6 +461,9 @@
             </div>
         </footer>
     </div> <!-- wrap -->
+
+    <button type="button" id="ScrollTop">TOP</button>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
