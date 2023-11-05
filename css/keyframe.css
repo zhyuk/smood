@@ -1,0 +1,32 @@
+@keyframes move {
+    0% {transform: translateY(0);}
+    30% {transform: translateY(-5px);}
+    50% {transform: translateY(-13px);}
+    100% {transform: translateY(0);}
+}
+@keyframes fade {
+    0%,20% {opacity: 0;}
+    50% {opacity: 0.3;}
+    100% {opacity: 1;}
+}
+@keyframes line1 {
+    0% {width: 0;}
+    50% {width: 50px;}
+    60% {width: 80px;}
+    100% {width: 155px;}
+}
+
+@keyframes fade_left {
+    0%,20% {opacity: 0;}
+    80% {opacity: 0.3;}
+    100% {opacity: 1;}
+}
+@keyframes fade_right {
+    0%,20% {opacity: 0;}
+    80% {opacity: 0.3;}
+    100% {opacity: 1; left: 0;}
+}
+@keyframes flash {
+    0%,40%,100% {opacity: 1;}
+    20%,60% {opacity: 0;}
+}
