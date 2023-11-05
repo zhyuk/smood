@@ -44,6 +44,7 @@ section {
     --color-orange: #F57D31;
     --color-black: #484848;
     --color-white: #F4F4F4;
+    --color-yellow:#F6D046;
 
     /* font-size */
     --title-size: 50px;
@@ -58,21 +59,20 @@ button#ScrollTop {
     bottom: calc(100vw * 60 / 1920);
     width: calc(100vw * 70 / 1920);
     height: calc(100vw * 70 / 1920);
-    background: transparent;
-    border: solid 2px var(--color-orange);
+    background: var(--color-yellow);
+    border: none;
     border-radius: 100%;
     font-size: 18px;
     font-weight: 500;
-    color: var(--color-orange);
+    color: var(--color-black);
     cursor: pointer;
     z-index: 10;
-    opacity: 0.3;
     transition: all .3s ease-in-out;
 }
 button#ScrollTop:hover {
     background-color: var(--color-orange);
     color: #FFF;
-    opacity: 1;
+
 }
 
 /* -------------- */
