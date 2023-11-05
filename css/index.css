@@ -740,6 +740,7 @@ section#service2 .container .img5 {
     top: 1330px;
     left: calc(100vw * 1080 / 1920);
     opacity: 0;
+    z-index: 2;
 }
 
 section#service2 .container .img5.active {
