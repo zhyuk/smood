@@ -668,7 +668,7 @@ section#service2 .container .line3.active {
 }
 
 section#service2 .container .img3 {
-    top: 440px;
+    top: calc(100vw * 440 / 1920);
     left: calc(100vw * 1080 / 1920);
     opacity: 0;
     z-index: 2;
