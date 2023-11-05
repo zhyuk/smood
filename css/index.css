@@ -35,12 +35,6 @@ section {
     max-width: 1920px;
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-    position: relative;
-}
-
 .clear {
     clear: both;
 }
@@ -94,9 +88,10 @@ a:hover::before {width: 100%;}
 a:hover{color: #F6D046;}
 
 /* main */
-main{background-image: url('../img/main.png'); background-size: 100% 100%; background-repeat: no-repeat;  height: 1200px;}
-main p{position: absolute; left: 200px; top: 440px; font-weight: 800; font-size: 40px; line-height: 45px; color: #FFFFFF;}
-main img{position: absolute; left: 200px; top: 510px; width: 400px;}
+section#main {height: 1200px; background-image: url(../img/main.png); background-repeat: no-repeat; background-size: 100% 100%; background-position: center center;}
+section#main .container {width: 100%; border: solid 1px red;}
+section#main p {position: absolute; left: calc(100vw * 200 / 1920); top: calc(100vw * 400 / 1920); font-size: 45px; color: #FFF;}
+section#main img {width: calc(100vw * 400 / 1920); position: absolute; top: 510px; left: calc(100vw * 200 / 1920);}
 
 /* section_economy */
 #economy{position: relative;}
@@ -310,9 +305,11 @@ section#service1 .title_box {
     left: -400px;
     transition: all 1.2s;
 }
+
 section#service1 .title_box.active {
     left: 0px;
 }
+
 section#service1 .main_box {
     width: calc(100vw * 600 / 1920);
     margin-left: calc(100vw * 75 / 1920);
@@ -360,15 +357,19 @@ section#service1 .main_box .character {
 section#service1 .main_box .character img {
     width: 70px;
 }
+
 section#service1 .main_box .character img:nth-of-type(1) {
-    animation: move 1s  ease-in-out infinite alternate;
+    animation: move 1s ease-in-out infinite alternate;
 }
+
 section#service1 .main_box .character img:nth-of-type(2) {
     animation: move 1.5s infinite alternate;
 }
+
 section#service1 .main_box .character img:nth-of-type(3) {
     animation: move 2s infinite alternate;
 }
+
 section#service1 .container {
     width: calc(100vw * 1492 / 1920);
     margin: 0 auto;
@@ -379,24 +380,48 @@ section#service1 .container img {
     width: calc(100vw * 350 / 1920);
     margin-left: 20px;
 }
+
 section#service1 .container .img_box {
-    position: relative;
     overflow: hidden;
 }
-section#service1 .container .img_box img{
-    transform: translateX(2000px);
-    transition: all 2s;
+
+section#service1 .container .img_box img {
+    position: relative;
 }
-section#service1 .container .img_box.active img{
-    transform: translateX(0);
-}
-/* section#service1 .container .img.active {
-    animation: fade 1.5s forwards;
-    left: 0;
-} */
-section#service1 .container img:nth-of-type(1) {
+
+section#service1 .container .img_box .img1 {
     margin-left: 0;
+    left: calc(100vw * -400 / 1920);
 }
+
+section#service1 .container .img_box .img2 {
+    left: calc(100vw * -900 / 1920);
+}
+
+section#service1 .container .img_box .img3 {
+    left: calc(100vw * -1300 / 1920);
+}
+
+section#service1 .container .img_box .img4 {
+    left: calc(100vw * -1700 / 1920);
+}
+
+section#service1 .container .img_box .img1.active {
+    animation: moveToRight 1s forwards;
+}
+
+section#service1 .container .img_box .img2.active {
+    animation: moveToRight 1.5s forwards;
+}
+
+section#service1 .container .img_box .img3.active {
+    animation: moveToRight 2s forwards;
+}
+
+section#service1 .container .img_box .img4.active {
+    animation: moveToRight 2.5s forwards;
+}
+
 section#service1 .right {
     float: right;
     text-align: right;
@@ -411,9 +436,11 @@ section#service1 .right .title_box {
     left: 400px;
     transition: all 1.2s;
 }
+
 section#service1 .right .title_box.active {
     left: 0;
 }
+
 section#service1 .right .main_box {
     margin-left: 0;
     margin-right: calc(100vw * 75 / 1920);
@@ -424,10 +451,12 @@ section#service1 .right .main_box {
     transition: all 1.3s;
 
 }
+
 section#service1 .right .main_box.active {
     animation: fade 1.5s forwards ease;
     top: 0;
 }
+
 section#service1 .right .main_box .character {
     position: absolute;
     top: -5px;
@@ -441,6 +470,30 @@ section#service1 .right .main_box .character img {
 
 section#service1 .right .container {
     text-align: left;
+}
+
+section#service1 .img_box .img5 {
+    right: calc(100vw * -1800 / 1920);
+}
+
+section#service1 .img_box .img6 {
+    right: calc(100vw * -1400 / 1920);
+}
+
+section#service1 .img_box .img7 {
+    right: calc(100vw * -900 / 1920);
+}
+
+section#service1 .img_box .img5.active {
+    animation: moveToLeft 2.5s forwards;
+}
+
+section#service1 .img_box .img6.active {
+    animation: moveToLeft 2s forwards;
+}
+
+section#service1 .img_box .img7.active {
+    animation: moveToLeft 1s forwards;
 }
 
 /* service2 */
@@ -465,9 +518,11 @@ section#service2 .title_box {
     top: -700px;
     transition: all 1.2s;
 }
+
 section#service2 .title_box.active {
     top: 0;
 }
+
 section#service2 .main_box {
     width: calc(100vw * 600 / 1920);
     margin-left: calc(100vw * 75 / 1920);
@@ -479,9 +534,11 @@ section#service2 .main_box {
     top: -500px;
     transition: all 1.5s;
 }
+
 section#service2 .main_box.active {
     top: 0;
 }
+
 section#service2 .main_box span {
     font-size: var(--main-size);
 }
@@ -512,6 +569,18 @@ section#service2 .main_box .character img {
     width: 70px;
 }
 
+section#service2 .main_box .character img:nth-child(1) {
+    animation: move 1s ease-in-out infinite alternate;
+}
+
+section#service2 .main_box .character img:nth-child(2) {
+    animation: move 1.5s ease-in-out infinite alternate;
+}
+
+section#service2 .main_box .character img:nth-child(3) {
+    animation: move 2s ease-in-out infinite alternate;
+}
+
 section#service2 .container {
     width: calc(100vw * 1492 / 1920);
     margin: 0 auto;
@@ -531,23 +600,36 @@ section#service2 .container img {
 section#service2 .container .main_img {
     width: calc(100vw * 420 / 1920);
 }
+
 section#service2 .container .line1 {
     top: 450px;
     width: 0;
     left: calc(100vw * 420 / 1920);
 }
+
 section#service2 .container .line1.active {
-    animation: line1 1s ease-in-out infinite;
+    animation: line1 1s ease forwards;
 }
 
 section#service2 .container .img2 {
     top: 60px;
     left: calc(100vw * 580 / 1920);
+    opacity: 0;
+    z-index: 2;
+}
+
+section#service2 .container .img2.active {
+    animation: fadeIn 1.5s forwards;
 }
 
 section#service2 .container .line2 {
     top: 120px;
     left: calc(100vw * 880 / 1920);
+    width: 0;
+}
+
+section#service2 .container .line2.active {
+    animation: line2 1.5s ease infinite;
 }
 
 section#service2 .container .text1 {
@@ -557,6 +639,12 @@ section#service2 .container .text1 {
     top: 120px;
     left: calc(100vw * 1050 / 1920);
     color: var(--color-black);
+    opacity: 0;
+}
+
+section#service2 .container .text1.active {
+    animation: fadeIn 1.5s forwards;
+    opacity: 1;
 }
 
 section#service2 .container .text1 h1 {
@@ -572,18 +660,34 @@ section#service2 .container .text1 p {
 section#service2 .container .line3 {
     top: 450px;
     left: calc(100vw * 880 / 1920);
+    width: 0;
+}
+
+section#service2 .container .line3.active {
+    animation: line 1.5s ease-out forwards;
 }
 
 section#service2 .container .img3 {
     top: 440px;
     left: calc(100vw * 1080 / 1920);
+    opacity: 0;
     z-index: 2;
+}
+
+section#service2 .container .img3.active {
+    animation: fadeIn .8s forwards;
 }
 
 section#service2 .container .line4 {
     top: 1020px;
     left: calc(100vw * 1150 / 1920);
     z-index: 1;
+    height: 0;
+}
+
+section#service2 .container .line4.active {
+    animation: line4 1.5s ease forwards;
+    animation-delay: 1.8s;
 }
 
 section#service2 .container .text2 {
@@ -593,6 +697,12 @@ section#service2 .container .text2 {
     top: 1075px;
     left: calc(100vw * 1220 / 1920);
     color: var(--color-black);
+    opacity: 0;
+}
+
+section#service2 .container .text2.active {
+    animation: fadeIn 1.5s ease forwards;
+    animation-delay: 1.3s;
 }
 
 section#service2 .container .text2 h1 {
@@ -608,32 +718,59 @@ section#service2 .container .text2 p {
 section#service2 .container .line5 {
     top: 1400px;
     left: calc(100vw * 390 / 1920);
+    width: 0;
+}
+
+section#service2 .container .line5.active {
+    animation: line5 1.5s ease forwards;
 }
 
 section#service2 .container .img4 {
     top: 1330px;
     left: calc(100vw * 730 / 1920);
+    opacity: 0;
+}
+
+section#service2 .container .img4.active {
+    animation: opacity 1.3s forwards;
+    animation-delay: 1.5s;
 }
 
 section#service2 .container .img5 {
     top: 1330px;
     left: calc(100vw * 1080 / 1920);
+    opacity: 0;
+}
+
+section#service2 .container .img5.active {
+    animation: opacity 1.3s forwards;
+    animation-delay: 2.8s;
 }
 
 section#service2 .container .line6 {
     top: 1780px;
     left: calc(100vw * 1000 / 1920);
+    height: 0;
+}
+
+section#service2 .container .line6.active {
+    animation: line6 1.5s forwards;
+    animation-delay: 4.1s;
 }
 
 section#service2 .container .text3 {
     width: calc(100vw * 300 / 1920);
-    height: 220px;
+    height: 0;
     position: absolute;
     top: 2020px;
     left: calc(100vw * 800 / 1920);
     color: var(--color-black);
+    overflow: hidden;
 }
-
+section#service2 .container .text3.active {
+    animation: text3 1.5s forwards;
+    animation-delay: 5.6s;
+}
 section#service2 .container .text3 h1 {
     font-size: 25px;
     font-weight: 800;
@@ -667,9 +804,11 @@ section#service3 .title_box {
     left: 500px;
     opacity: 0;
 }
+
 section#service3 .title_box.active {
-    animation: fade_right 1.2s forwards;
+    animation: moveToRight 1.2s forwards;
 }
+
 section#service3 .main_box {
     width: calc(100vw * 600 / 1920);
     margin-left: calc(100vw * 75 / 1920);
@@ -681,8 +820,9 @@ section#service3 .main_box {
     left: 600px;
     opacity: 0;
 }
-section#service3 .main_box.active {    
-    animation: fade_right 1.2s forwards;
+
+section#service3 .main_box.active {
+    animation: moveToRight 1.2s forwards;
 }
 
 section#service3 .main_box span {
@@ -721,22 +861,56 @@ section#service3 .container:nth-of-type(1) {
 section#service3 .container img {
     width: calc(100vw * 300 / 1920);
     margin-left: calc(100vw * 30 / 1920);
+    position: relative;
 }
 
-section#service3 .container img:nth-of-type(1) {
+section#service3 .container .img1 {
     margin-left: calc(100vw * 180 / 1920);
+    left: calc(100vw * -800 / 1920);
+}
+
+section#service3 .container .img2 {
+    left: calc(100vw * -1200 / 1920);
+}
+
+section#service3 .container .img3 {
+    left: calc(100vw * -1600 / 1920);
+}
+
+section#service3 .container .img1.active {
+    animation: moveToRight 2s forwards;
+}
+
+section#service3 .container .img2.active {
+    animation: moveToRight 2.5s forwards;
+}
+
+section#service3 .container .img3.active {
+    animation: moveToRight 3s forwards;
 }
 
 section#service3 .container .line7 {
     position: absolute;
     top: 595px;
     left: calc(100vw * 180 / 1920);
+    height: 0;
+}
+
+section#service3 .container .line7.active {
+    animation: line7 1.5s ease forwards;
+    animation-delay: 1.5s;
 }
 
 section#service3 .container .line8 {
     position: absolute;
     top: 350px;
     left: calc(100vw * 1130 / 1920);
+    width: 0;
+}
+
+section#service3 .container .line8.active {
+    animation: line 1.8s ease forwards;
+    animation-delay: 3s;
 }
 
 section#service3 .container .text1 {
@@ -747,6 +921,12 @@ section#service3 .container .text1 {
     left: calc(100vw * -80 / 1920);
     color: var(--color-black);
     text-align: right;
+    opacity: 0;
+}
+
+section#service3 .container .text1.active {
+    animation: fadeIn 1.5s forwards;
+    animation-delay: 2.3s;
 }
 
 section#service3 .container .text1 h1 {
@@ -766,6 +946,12 @@ section#service3 .container .text2 {
     top: 360px;
     left: calc(100vw * 1330 / 1920);
     color: var(--color-black);
+    opacity: 0;
+}
+
+section#service3 .container .text2.active {
+    animation: fadeIn 1.5s forwards;
+    animation-delay: 3.3s;
 }
 
 section#service3 .container .text2 h1 {
@@ -803,7 +989,12 @@ section#service3 .right .main_box {
 section#service3 .container .line9 {
     position: absolute;
     top: 580px;
-    left: calc(100vw * 950 / 1920);
+    left: calc(100vw * 1300 / 1920);
+    opacity: 0;
+}
+
+section#service3 .container .line9.active {
+    animation: line9 1.5s forwards;
 }
 
 section#service3 .container .text3 {
@@ -814,6 +1005,11 @@ section#service3 .container .text3 {
     left: calc(100vw * 730 / 1920);
     color: var(--color-black);
     text-align: right;
+    opacity: 0;
+}
+
+section#service3 .container .text3.active {
+    animation: fadeIn 1.5s forwards;
 }
 
 section#service3 .container .text3 h1 {
@@ -828,6 +1024,17 @@ section#service3 .container .text3 p {
 
 section#service3 .container .function_img {
     margin-top: 180px;
+    width: calc(100vw * 300 / 1920);
+}
+
+section#service3 .container .main_img {
+    position: absolute;
+    right: calc(100vw * -800 / 1920);
+    z-index: 2;
+}
+
+section#service3 .container .main_img.active {
+    animation: moveToLeft 1.5s ease forwards;
 }
 
 /* service4 */
@@ -847,8 +1054,14 @@ section#service4 .bg_box {
     background-color: var(--color-orange);
     position: absolute;
     z-index: 3;
+    left: -700px;
     transition: all 1.6s;
 }
+
+section#service4 .bg_box.active {
+    left: 0;
+}
+
 section#service4 .bg_box .character_box,
 section#service4 .bg_box_right .character_box {
     width: calc(100vw * 260 / 1920);
@@ -872,7 +1085,12 @@ section#service4 .title_box {
     font-size: var(--title-size);
     border-bottom: 1px solid var(--color-orange);
     vertical-align: top;
+    opacity: 0;
+    transition: all 1.8s;
+}
 
+section#service4 .title_box.active {
+    opacity: 1;
 }
 
 section#service4 .main_box {
@@ -882,8 +1100,12 @@ section#service4 .main_box {
     margin-top: 330px;
     line-height: 1.4;
     position: relative;
+    opacity: 0;
+    transition: all 1.3s;
 }
-
+section#service4 .main_box.active {
+    opacity: 1;
+}
 section#service4 .main_box span {
     font-size: var(--main-size);
     color: var(--color-black);
@@ -966,10 +1188,14 @@ section#service4 .bg_box_right {
     margin-top: 170px;
     background-color: var(--color-orange);
     position: absolute;
-    right: calc(100vw * 0 / 1920);
+    right: -500px;
     z-index: 3;
+    transition: all 2s;
 }
 
+section#service4 .bg_box_right.active {
+    right: calc(100vw * 0 / 1920);
+}
 section#service4 .bg_box_right .character_box {
     left: 0;
     right: calc(100vw * 140 / 1920);
@@ -985,11 +1211,23 @@ section#service4 .right {
 section#service4 .title_box.right {
     padding-left: 0;
     padding-right: calc(100vw * 260 / 1920);
+    opacity: 0;
+    transition: all 1.8s;
+}
+
+section#service4 .title_box.right.active {
+    opacity: 1;
 }
 
 section#service4 .main_box.right {
     margin-left: 0;
     margin-right: calc(100vw * 75 / 1920);
+    opacity: 0;
+    transition: all 2.3s;
+}
+
+section#service4 .main_box.right.active {
+    opacity: 1;
 }
 
 section#service4 .main_box.right span.check {
@@ -1002,12 +1240,21 @@ section#service4 .container img.container2-img {
     width: calc(100vw * 300 / 1920);
     margin-left: 0;
     z-index: 2;
+    opacity: 0;
 }
-
+section#service4 .container img.container2-img.active {
+    animation: fadeIn 2s ease forwards;
+}
 section#service4 .container .line12 {
     position: absolute;
     top: 650px;
     left: calc(100vw * 300 / 1920);
+    width: 0;
+}
+
+section#service4 .container .line12.active {
+    animation: line12 1s ease forwards;
+    animation-delay: 1.6s;
 }
 
 section#service4 .container img.mockup-img {
@@ -1015,6 +1262,12 @@ section#service4 .container img.mockup-img {
     margin-left: calc(100vw * 125 / 1920);
     margin-top: 35px;
     z-index: 2;
+    opacity: 0;
+}
+
+section#service4 .container img.mockup-img.active {
+    animation: fadeIn 2s ease forwards;
+    animation-delay: 2s;
 }
 
 section#service4 .container img.mockup-fnc {
@@ -1023,27 +1276,41 @@ section#service4 .container img.mockup-fnc {
     top: 350px;
     left: calc(100vw * 380 / 1920);
     z-index: 3;
+    transform: scale(0);
+}
+
+section#service4 .container img.mockup-fnc.active {
+    animation: mockup-fnc 1.4s ease forwards;
+    animation-delay: 3.8s;
 }
 
 section#service4 .container .line13 {
     position: absolute;
     top: 560px;
     left: calc(100vw * 930 / 1920);
+    height: 0;
+}
+
+section#service4 .container .line13.active {
+    animation: line13 2.5s ease-in forwards;
+    animation-delay: 5s;
 }
 
 section#service4 .container .img6 {
     position: absolute;
     top: 450px;
     left: calc(100vw * 1080 / 1920);
+    opacity: 0;
+}
+
+section#service4 .container .img6.active {
+    animation: fadeIn 2s ease forwards;
+    animation-delay: 7s;
 }
 
 /* service5 */
 section#service5 {
     height: 1800px;
-    background-image: url(../img/service5_bg.png);
-    background-repeat: no-repeat;
-    background-size: calc(100vw * 900 / 1920);
-    background-position: center calc(100vh * 1200 / 1800);
     background-color: var(--color-white);
 
 }
@@ -1051,10 +1318,14 @@ section#service5 {
 section#service5 .bg_box {
     width: calc(100vw * 405 / 1920);
     height: 35px;
-    margin-top: 190px;
     background-color: var(--color-orange);
     position: absolute;
     z-index: 3;
+    opacity: 0;
+}
+
+section#service5 .bg_box.active {
+    animation: bg_box 2s forwards;
 }
 
 section#service5 .bg_box .character_box {
@@ -1094,7 +1365,7 @@ section#service5 .main_box h1 {
     font-weight: 700;
     color: var(--color-black);
     margin-bottom: 15px;
-    animation: flash 6s ease-out infinite alternate;
+    animation: flash 6s ease-out infinite;
 }
 
 section#service5 .main_box span {
@@ -1116,15 +1387,29 @@ section#service5 .container {
     position: relative;
 }
 
+section#service5 .container svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+section#service5 .container svg.active {
+    animation: rotate 2s linear infinite;
+}
+
 section#service5 .container .btn {
     width: 50px;
     height: 50px;
     background-color: var(--color-orange);
     border-radius: 100%;
 }
+
 section#service5 .container .active {
     transition: all .8s ease;
 }
+
 section#service5 .container .btn.active {
     border: solid 10px var(--color-orange);
     background-color: #FFF;
@@ -1138,14 +1423,14 @@ section#service5 .container span {
 
 section#service5 .container span.top {
     position: absolute;
-    top: -25px;
+    top: calc(100vw * -55 / 1920);
     left: 50%;
     transform: translateX(-50%);
 }
 
-section#service5 .container .top {
+section#service5 .container div.top {
     position: absolute;
-    top: 10px;
+    top: calc(100vw * -25 / 1920);
     left: 50%;
     transform: translateX(-50%);
 }
@@ -1153,41 +1438,41 @@ section#service5 .container .top {
 section#service5 .container span.right {
     position: absolute;
     top: 50%;
-    right: calc(100vw * 165 / 1920);
+    right: calc(100vw * 135 / 1920);
     transform: translateY(-50%);
 }
 
-section#service5 .container .right {
+section#service5 .container div.right {
     position: absolute;
     top: 50%;
-    right: calc(100vw * 275 / 1920);
+    right: calc(100vw * 245 / 1920);
     transform: translateY(-50%);
 }
 
 section#service5 .container span.left {
     position: absolute;
     top: 50%;
-    left: calc(100vw * 85 / 1920);
+    left: calc(100vw * 135 / 1920);
     transform: translateY(-50%);
 }
 
-section#service5 .container .left {
+section#service5 .container div.left {
     position: absolute;
     top: 50%;
-    left: calc(100vw * 275 / 1920);
+    left: calc(100vw * 245 / 1920);
     transform: translateY(-50%);
 }
 
 section#service5 .container span.bottom {
     position: absolute;
-    bottom: -25px;
+    bottom: calc(100vw * -55 / 1920);
     left: 50%;
     transform: translateX(-50%);
 }
 
-section#service5 .container .bottom {
+section#service5 .container div.bottom {
     position: absolute;
-    bottom: 0px;
+    bottom: calc(100vw * -25 / 1920);
     left: 50%;
     transform: translateX(-50%);
 }
@@ -1209,6 +1494,7 @@ section#service5 .container .content .mockup {
     top: 70px;
     left: calc(100vw * 50 / 1920);
     opacity: 0;
+    z-index: 2;
 }
 
 section#service5 .container .content .mockup.active {
@@ -1363,7 +1649,7 @@ section#profile ul.profile li:nth-of-type(1) {
     background-image: url(../img/profile1.png);
     background-repeat: no-repeat;
     background-size: calc(100vw * 295 / 1920);
-    background-position: center top;
+    background-position: calc(100vw * -30 / 1920) top;
 }
 
 section#profile ul.profile li:nth-of-type(1)::before {
@@ -1388,7 +1674,7 @@ section#profile ul.profile li:nth-of-type(2) {
     background-image: url(../img/profile2.png);
     background-repeat: no-repeat;
     background-size: calc(100vw * 311 / 1920);
-    background-position: center top;
+    background-position: calc(100vw * 0 / 1920) top;
 }
 
 section#profile ul.profile li:nth-of-type(2)::before {
@@ -1413,7 +1699,7 @@ section#profile ul.profile li:nth-of-type(3) {
     background-image: url(../img/profile3.png);
     background-repeat: no-repeat;
     background-size: calc(100vw * 311 / 1920);
-    background-position: center top;
+    background-position: calc(100vw * -10 / 1920) top;
 }
 
 section#profile ul.profile li:nth-of-type(3)::before {
@@ -1438,7 +1724,7 @@ section#profile ul.profile li:nth-of-type(4) {
     background-image: url(../img/profile4.png);
     background-repeat: no-repeat;
     background-size: calc(100vw * 311 / 1920);
-    background-position: center top;
+    background-position: calc(100vw * -15 / 1920) top;
 }
 
 section#profile ul.profile li:nth-of-type(4)::before {
@@ -1462,7 +1748,7 @@ section#profile ul.profile li:nth-of-type(5) {
     border: solid 6px #5299FF;
     background-image: url(../img/profile5.png);
     background-repeat: no-repeat;
-    background-size: calc(100vw * 290 / 1920);
+    background-size: calc(100vw * 320 / 1920);
     background-position: center top;
 }
 
