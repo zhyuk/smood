@@ -120,7 +120,7 @@ section#main img {width: calc(100vw * 400 / 1920); position: absolute; top: 510p
 
 #economy .pretendard{position: absolute; top: 447px; left: 50%; transform: translate(-50%, -50%); text-align: center; font-size: 24px; line-height: 30px; font-weight: 400; color: #fff;}
 
-#economy{position: relative; width: 100%; max-width: 100%; height: auto; overflow-x: hidden; overflow-y: hidden; color: #fff; cursor: pointer; font-size: 24px;}
+#economy{position: relative; width: 100%; max-width: 100%; height: auto; overflow-x: hidden; overflow-y: hidden; color: #fff; font-size: 24px;}
 #economy .economy_box{width: 100%; margin-left: 100px;}
 #economy .economy_box .slider1,
 .economy_box .slider2 { position: absolute; top: 657px; white-space: nowrap; will-change: transform; animation: marquee 20000ms linear infinite;}
