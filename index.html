@@ -12,47 +12,58 @@
     <link rel="stylesheet" href="./css/index.css">
 </head>
 
-<body>
+<body  class="custom-cursor">
     <header>
-        <img src="img/logo_header.png" alt="">
+        <div id="home"><a href="#"><img src="img/logo_header.png" alt=""></a></div>
         <ul>
-            <li><a class="nunito nav1">PLANNING</a></li>
-            <li><a class="nunito nav2">DESIGN</a></li>
-            <li><a class="nunito nav3">CONTACT</a></li>
+            <li id="planning"><a class="nunito" href="#">PLANNING</a></li>
+            <li id="design"><a class="nunito" href="#">DESIGN</a></li>
+            <li id="contact"><a class="nunito" href="#">CONTACT</a></li>
         </ul>
+        <div class="progress-container">
+            <div class="progress-bar"></div>
+        </div>
     </header>
     <div id="wrap">
         <section id="main">
             <article>
                 <div class="container">
-                    <p class="nanumEB">우리아이 경제 한 모금</p>
-                    <img src="./img/SMOO_D2.png" alt="">
+                    <!-- 이미지 -->
+                    <!-- <p class="nanumEB">우리아이 경제 한 모금</p> -->
+                    <!-- <img src="./img/SMOO_D2.png" alt=""> -->
                 </div>
             </article>
         </section>
         <section id="economy">
-            <article>
-                <img src="img/sec_kid.jpg" alt="">
-                <p class="subhead nanumEB">어린이 <span>경제관념,</span> 이대로 괜찮을까?</p>
-                <p class="pretendard">청소년의 금융 이해력 점수가 10년 전보다 하락한 결과를 보이고 있는 시점에서, <br>
-                    어린 연령층의 경제 관념에 대한 우려의 목소리가 커지고 있습니다.</p>
-                <ul class="slider1">
-                    <li><span>명품 소비량 증가</span></li>
-                    <li><span>타국과 대비되는 교육법</span></li>
-                    <li><span>청소년 금융이해력 하락</span></li>
-                    <li><span>FLEX 콘텐츠 유행</span></li>
-                    <li><span>의무적으로 이루어지지 않는 교육</span></li>
-                    <!-- 인라인 요소 안에는 블록태그가 들어가면 안됨 -->
-                </ul>
-                <ul class="slider2">
-                    <li><span>저축하기 못하는 아이들</span></li>
-                    <li><span>의무적으로 이루어지지 않는 교육</span></li>
-                    <li class="color"><span>"그렇다면, 경제 관념을 어떻게 쌓아야 하지?"</span></li>
-                    <li><span>지축하지 못하는 아이들</span></li>
-                    <!-- 인라인 요소 안에는 블록태그가 들어가면 안됨 -->
-                </ul>
-            </article>
-
+            <img src="img/sec_kid.jpg" alt="">
+            <p class="subhead nanumEB">어린이 <span>경제관념,</span> 이대로 괜찮을까?</p>
+            <p class="pretendard">청소년의 금융 이해력 점수가 10년 전보다 하락한 결과를 보이고 있는 시점에서, <br>
+                어린 연령층의 경제 관념에 대한 우려의 목소리가 커지고 있습니다.</p>
+                
+                <article class="economy_box">
+                    <div class="slider1">
+                        <div class="content">
+                            <span>명품 소비량 증가</span>
+                            <span>타국과 대비되는 교육법</span>
+                            <span>청소년 금융이해력 하락</span>
+                            <span>FLEX 콘텐츠 유행</span>
+                            <span>의무적으로 이루어지지 않는 교육</span>
+                            <!--  -->
+                            <span>명품 소비량 증가</span>
+                            <span>타국과 대비되는 교육법</span>
+                        </div>
+                    </div>
+                    <div class="slider2">
+                        <div class="content">
+                            <span>청소년 금융이해력 하락</span>
+                            <span>지축하지 못하는 아이들</span>
+                            <span>의무적으로 이루어지지 않는 교육</span>
+                            <span class="color">"그렇다면, 경제 관념을 어떻게 쌓아야 하지?"</span>
+                            <span>지축하지 못하는 아이들</span>
+                            <span>타국과 대비되는 교육법</span>
+                        </div>
+                    </div>
+                </article>
         </section>
 
         <section id="insight">
@@ -136,16 +147,18 @@
             <div class="list">
                 <div class="text_box"></div>
                 <p class="nanumEB">스무디를 통해</p>
-                <ul class="num1">
-                    <li><span>01</span>원하는 물건을 알뜰하게 구매해요</li>
-                    <li><span>02</span>올바른 소비 방법을 학습해요</li>
-                    <li><span>03</span>물건 구매 전 한 번 더 생각하게 돼요</li>
-                </ul>
-                <ul class="num2">
-                    <li><span>04</span>필요 없는 물건을 팔고 돈을 벌어요</li>
-                    <li><span>05</span>상품의 시세, 정가 개념을 파악해요</li>
-                    <li><span>06</span>물건의 적정 가치를 책정하는 법을 배워요</li>
-                </ul>
+                <div class="btw">
+                    <ul class="num1">
+                        <li><span>01</span>원하는 물건을 알뜰하게 구매해요</li>
+                        <li><span>02</span>올바른 소비 방법을 학습해요</li>
+                        <li><span>03</span>물건 구매 전 한 번 더 생각하게 돼요</li>
+                    </ul>
+                    <ul class="num2">
+                        <li><span>04</span>필요 없는 물건을 팔고 돈을 벌어요</li>
+                        <li><span>05</span>상품의 시세, 정가 개념을 파악해요</li>
+                        <li><span>06</span>물건의 적정 가치를 책정하는 법을 배워요</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
@@ -154,9 +167,9 @@
             <div class="filter"></div>
             <p class="subhead nunito">SMOOTH KEYWORD</p>
             <ul class="pretendard">
-                <li><span>#쉬운</span< /li>
-                <li><span>#재미요소</span< /li>
-                <li><span>#자연스러운</span< /li>
+                <li><span>#쉬운</span</li>
+                <li><span>#재미요소</span</li>
+                <li><span>#자연스러운</span</li>
                 <li><span>#일상과 접목된</span></li>
                 <li><span>#깔끔한</span></li>
             </ul>
@@ -175,7 +188,7 @@
                     <li><span>스무디마켓 이용</span></li>
                     <!-- <li><span>카드를 통한 소비</span></li>
                     <li><span>소비내역 확인</span></li>
-                    <li><span>용돈 계획 세우기</span></li> -->
+                    <li><span>용돈 계획 세우기</span></li> -->  
                 </ul>
                 <ul class="list2">
                     <li><span>미션 신청</span></li>
@@ -537,8 +550,8 @@
                         <circle cx="45" cy="20" r="15" stroke="#F6701B" stroke-width="3" fill="#FAAE7F" />
                         <circle cx="45" cy="20" r="7.5" stroke="#F6701B" stroke-width="3" fill="#FFFFFF" />
                     </svg>
-                    <img src="./img/service4_img1.png" alt="이미지1">
-                    <img src="./img/service4_img2.png" alt="이미지2">
+                    <img src="./img/service4_img1.png" class="img" alt="이미지1">
+                    <img src="./img/service4_img2.png" class="img" alt="이미지2">
                     <svg width="100" height="40" class="line11">
                         <path d="M0 20 L70 20" fill="none" stroke="#FF850A" stroke-width="3" stroke-dasharray="7" />
                         <circle cx="70" cy="20" r="10" stroke="#F6701B" stroke-width="3" fill="#FAAE7F" />
@@ -655,11 +668,7 @@
         <section id="mockup1">
             <article>
                 <div class="container">
-                    <img src="./img/logo_white.png" alt="">
-                    <h1 class="pretendard">초급 경제 생활에 함께합니다</h1>
-                    <p>어렵고 지루하게만 느껴졌던 경제<br>
-                        이제는 내 손 안에서 재미있게 시작해요
-                    </p>
+                    <!-- **bg_mockup** -->
                 </div>
             </article>
         </section>
@@ -756,6 +765,7 @@
     <button type="button" class="pretendard" id="ScrollTop">TOP</button>
     <script src="./js/index.js"></script>
     <script src="./js/scroll.js"></script>
+    <script src="./js/mouse.js"></script>
 </body>
 
 </html>

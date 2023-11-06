@@ -48,7 +48,7 @@
 
 @keyframes line7 {
     0% {height: 0;}
-    100% {height: 110px;}
+    100% {height: 115px;}
 }
 
 @keyframes line9 {
@@ -99,7 +99,7 @@
 @keyframes moveToLeft {
     0% {opacity: 0;}
     60% {opacity: 0;}
-    100% {right: 0; opacity: 1;}
+    100% {    right: calc(100vw * 0 / 1920);; opacity: 1;}
 }
 
 @keyframes moveToTop {
@@ -119,7 +119,7 @@
     60% {transform: scale(1.15);}
     60% {transform: scale(0.95);}
     60% {transform: scale(1.15);}
-    100% {opacity: 1;}
+    100% {opacity: 1; transform: scale(1.);}
 }
 
 @keyframes opacity {

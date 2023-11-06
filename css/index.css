@@ -23,7 +23,9 @@ body {
     background-color: #F4F4F4;
     color: #000;
 }
-
+body::-webkit-scrollbar {
+    display: none;
+}
 section {
     width: 100%;
     height: auto;
@@ -72,9 +74,26 @@ button#ScrollTop {
 button#ScrollTop:hover {
     background-color: var(--color-orange);
     color: #FFF;
-
 }
 
+/* progressbar */
+.progress-container {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+}
+.progress-container .progress-bar {
+    width: 0;
+    height: 6px;
+    background: #FAE26A;
+}
+
+/* 마우스 커서 */
+.custom-cursor {
+    cursor: url('../img/cursor.png'), auto;
+}
 /* -------------- */
 /* header */
 header {display: flex; justify-content: space-between; align-items: center; width: 100%; height: 80px; background-color: rgba(255, 255, 255, 0.2); position: fixed; top: 0; backdrop-filter: blur(35px); z-index: 99;}
@@ -82,32 +101,63 @@ header img {margin-left: 90px;}
 header ul {display: flex; list-style: none; margin-right: 50px;}
 header li {display: inline-block; padding: 0 40px; font-size: 22px; font-family: 'Nunito', 'ExtraBold';}
 
-a {text-decoration: none; color: #F57D31; position: relative;}
-a::before { content: ""; position: absolute; width: 0; height: 3px; bottom: 0; left: 50%; background-color: #F6D046; transition: all 0.3s ease-out; transform: translateX(-50%);}
-a:hover::before {width: 100%;}
-a:hover{color: #F6D046;}
+ul a {text-decoration: none; color: #F57D31; position: relative;}
+ul a::before { content: ""; position: absolute; width: 0; height: 3px; bottom: 0; left: 50%; background-color: #FAE26A; transition: all 0.3s ease-out; transform: translateX(-50%);}
+ul a:hover::before {width: 100%;}
+ul a:hover{color: #FAE26A;}
 
 /* main */
 section#main {height: 1200px; background-image: url(../img/main.png); background-repeat: no-repeat; background-size: 100% 100%; background-position: center center;}
-section#main .container {width: 100%; border: solid 1px red;}
+section#main .container {width: 100%;}
 section#main p {position: absolute; left: calc(100vw * 200 / 1920); top: calc(100vw * 400 / 1920); font-size: 45px; color: #FFF;}
 section#main img {width: calc(100vw * 400 / 1920); position: absolute; top: 510px; left: calc(100vw * 200 / 1920);}
 
 /* section_economy */
-#economy{position: relative;}
+/* #economy{position: relative;} */
 #economy img {width: 100%; height: 1200px; filter: brightness(50%);}
 #economy .subhead{position: absolute; font-size: 50px; top: 324px; width: 100%; text-align: center; z-index: 3; color: #fff;}
 #economy .subhead span{background: #F57D31; border-radius: 10px; padding: 10px;}
 
 #economy .pretendard{position: absolute; top: 447px; left: 50%; transform: translate(-50%, -50%); text-align: center; font-size: 24px; line-height: 30px; font-weight: 400; color: #fff;}
-#economy .slider1{position: absolute; width: 100%; top: 657px; display: flex; list-style: none; justify-content: center;}
-#economy .slider1 li{border: solid 3px #F57D31; background-color: rgba(255, 255, 255, 0.2); border-radius: 10px; font-size: 24px; padding: 20px 30px; margin: 0 20px; text-align: center; color: #fff;}
-#economy .slider2{position: absolute; width: 100%; top: 797px; display: flex; list-style: none; justify-content: center;}
-#economy .slider2 li{border: solid 3px #F57D31; background-color: rgba(255, 255, 255, 0.2); border-radius: 10px; font-size: 24px; padding: 20px 30px; margin: 0 20px; text-align: center; color: #fff;}
+
+#economy{position: relative; width: 100%; max-width: 100%; height: auto; overflow-x: hidden; overflow-y: hidden; color: #fff; cursor: pointer; font-size: 24px;}
+#economy .economy_box{width: 100%; margin-left: 100px;}
+#economy .economy_box .slider1,
+.economy_box .slider2 { position: absolute; top: 657px; white-space: nowrap; will-change: transform; animation: marquee 20000ms linear infinite;}
+#economy .economy_box .slider2 {position: absolute; top: 797px; will-change: transform; animation: marquee2 20000ms linear infinite;}
+#economy .economy_box .slider1 .content span,
+.slider2 .content span { margin: 0 50px; border: solid 3px #F57D31; background-color: rgba(255, 255, 255, 0.2); border-radius: 30px; padding: 30px 86px;}
 #economy .slider2 .color{background-color: #F57D31; color: #fff;}
+
+@keyframes marquee {
+    from {
+    transform: translateX(0);
+    }
+    to {
+    transform: translateX(-50%);
+    }
+}
+@keyframes marquee2 {
+    from {
+        transform: translateX(-50%);
+    }
+    to {
+        transform: translateX(0);
+    }
+    }
 
 /* section_insight */
 #insight{position: relative; height: 1200px;}
+
+#insight .insight_1,
+#insight .insight_2 {
+    opacity: 0; /* 초기에 투명하게 설정합니다. */
+    transition: opacity 1s; /* 투명도 전환을 부드럽게 만듭니다. */
+}
+
+.active {
+    opacity: 1; /* active 클래스가 추가되면 투명도를 1로 설정하여 나타나게 합니다. */
+}
 /* #insight .circle{position: absolute; width: 32px; height: 32px; border-radius: 100%; background-color: #F57D31; left: 894px; z-index: -1; top: 190px;} //letf 픽셀값 */
 #insight .circle{position: absolute; width: 32px; height: 32px; border-radius: 100%; background-color: #F57D31; z-index: -1; top: 190px; left: 47.8%; transform: translate(-47.8%, 0);}
 #insight .title{position: relative; text-align: center; z-index: 1; top: 200px;}
@@ -172,18 +222,19 @@ section#video iframe {width: 100%; height: 1200px}
 
 #focus_on .solution_arrow{position: absolute; width: 100%; text-align: center; top: 1480px; list-style: none; justify-content: center; display: flex;}
 #focus_on .solution_arrow .round{width: 208px; height: 208px; border: solid 2px #F57D31; border-radius: 100%; font-family: "Pretendard Variable"; font-size: 24px; font-weight: 600; color: #484848; display: flex; justify-content: center; align-items: center;}
+#focus_on .solution_arrow .round:hover{background-color: #F57D31; color: #fff;}
 #focus_on .solution_arrow img{ margin: 94px 100px;}
 
 #focus_on .list{position: absolute; width: 100%; text-align: center; top: 1760px;}
 #focus_on .list p{font-size: 32px; color: #484848; }
 #focus_on .text_box{background-color: #F4DCCD; width: 210px; height: 15px; position: absolute; left: 50%; transform: translateX(-50%); z-index: -1; top: 18px;}
-
-#focus_on .list .num1{position: absolute; margin-top: 70px; width: 400px; left: 500px;}
+#focus_on .list .btw{display: flex; justify-content: space-between; margin: 0 400px;}
+#focus_on .list .num1{margin-top: 70px; width: 360px; left: 500px;}
 #focus_on .list .num1 li{font-family: "Pretendard Variable"; font-size: 20px; font-weight: 500; color: #484848; margin-bottom: 45px; text-align: left;}
 #focus_on .list .num1 li span{font-size: 24px; font-weight: 900; color: #F57D31; margin-right: 32px;}
-#focus_on .list .num2 {position: absolute; margin-top: 70px; width: 400px; right: 500px;}
+#focus_on .list .num2 { margin-top: 70px; width: 360px; right: 500px;}
 #focus_on .list .num2 li{font-family: "Pretendard Variable"; font-size: 20px; font-weight: 500; color: #484848; margin-bottom: 45px; text-align: left;}
-#focus_on .list .num2 li span{font-size: 24px; font-weight: 900; color: #F57D31; margin-right: 32px;}
+#focus_on .list .num2 li span{font-size: 24px; font-weight: 900; color: #F57D31;}
 
 /* section_keyword */
 #keyword{position: relative; height: 665px; background-color: #CF570B; width: 100%;}
@@ -200,6 +251,9 @@ section#video iframe {width: 100%; height: 1200px}
 #ux_goal .text{position: absolute; width: 100%; text-align: center; top: 135px;}
 #ux_goal .text :nth-of-type(1){font-size: 36px; font-weight: 500; color: #fff; margin-bottom: 40px;}
 #ux_goal .text :nth-of-type(2){font-size: 50px; font-weight: 900; color: #fff;}
+
+#ux_goal .orange{background-color: #F57D31; color: #fff;} 
+
 
 #ux_goal .orange{background-color: #F57D31; color: #fff;} 
 /* 오렌지 색 안먹음 */
@@ -1026,6 +1080,33 @@ section#service3 .container .text3 p {
 section#service3 .container .function_img {
     margin-top: 180px;
     width: calc(100vw * 300 / 1920);
+    opacity: 0;
+}
+
+section#service3 .container .function_img:nth-child(1) {
+    right: calc(100vw * -1200 / 1920);
+}
+
+section#service3 .container .function_img:nth-child(1).active {
+    animation: moveToLeft 1.5s ease forwards;
+    animation-delay: 1.5s;
+}
+section#service3 .container .function_img:nth-child(2) {
+    right: calc(100vw * -870 / 1920);
+}
+
+section#service3 .container .function_img:nth-child(2).active {
+    animation: moveToLeft 1.5s ease forwards;
+    animation-delay: 1s;
+}
+
+section#service3 .container .function_img:nth-child(3) {
+    right: calc(100vw * -540 / 1920);
+}
+
+section#service3 .container .function_img:nth-child(3).active {
+    animation: moveToLeft 1.5s ease forwards;
+    animation-delay: .5s;
 }
 
 section#service3 .container .main_img {
@@ -1130,6 +1211,12 @@ section#service4 .container {
 section#service4 .container img {
     width: calc(100vw * 300 / 1920);
     margin-left: calc(100vw * 80 / 1920);
+    opacity: 0;
+    z-index: 2;
+}
+
+section#service4 .container img.active {
+    animation: fadeIn 2s ease forwards;
 }
 
 section#service4 .container img:nth-of-type(1) {
@@ -1268,7 +1355,7 @@ section#service4 .container img.mockup-img {
 
 section#service4 .container img.mockup-img.active {
     animation: fadeIn 2s ease forwards;
-    animation-delay: 2s;
+    animation-delay: 1s;
 }
 
 section#service4 .container img.mockup-fnc {
@@ -1277,12 +1364,12 @@ section#service4 .container img.mockup-fnc {
     top: 350px;
     left: calc(100vw * 380 / 1920);
     z-index: 3;
-    transform: scale(0);
+    opacity: 0;
 }
 
 section#service4 .container img.mockup-fnc.active {
-    animation: mockup-fnc 1.4s ease forwards;
-    animation-delay: 3.8s;
+    animation: fadeIn 1.4s ease forwards;
+    animation-delay: 2s;
 }
 
 section#service4 .container .line13 {
@@ -1294,7 +1381,7 @@ section#service4 .container .line13 {
 
 section#service4 .container .line13.active {
     animation: line13 2.5s ease-in forwards;
-    animation-delay: 5s;
+    animation-delay: 2.5s;
 }
 
 section#service4 .container .img6 {
@@ -1306,7 +1393,7 @@ section#service4 .container .img6 {
 
 section#service4 .container .img6.active {
     animation: fadeIn 2s ease forwards;
-    animation-delay: 7s;
+    animation-delay: 3s;
 }
 
 /* service5 */
