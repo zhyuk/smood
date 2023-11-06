@@ -237,6 +237,7 @@ section#video iframe {width: 100%; height: 1200px}
 #focus_on .list .num2 li span{font-size: 24px; font-weight: 900; color: #F57D31;}
 
 /* section_keyword */
+/* section_keyword */
 #keyword{position: relative; height: 665px; background-color: #CF570B; width: 100%;}
 #keyword img{position: absolute; height: 100%; left: 100px;}
 #keyword .filter{position: absolute; top: 0; width: 100%; height: 665px; background-color: rgba(0, 0, 0, 0.5);}
@@ -244,6 +245,7 @@ section#video iframe {width: 100%; height: 1200px}
 
 #keyword ul{position: absolute; width: 100%; top: 377px; display: flex; list-style: none; justify-content: center;}
 #keyword li{border: solid 3px #fff; background-color: rgba(255, 255, 255, 0.2); border-radius: 50px; font-size: 30px; font-weight: 600; padding: 20px 50px; margin: 0 60px; text-align: center; color: #fff;}
+#keyword li:hover{background-color: #F57D31 ;}
 
 /* section_ux_goal */
 #ux_goal{position: relative; height: 2400px;}
@@ -252,28 +254,21 @@ section#video iframe {width: 100%; height: 1200px}
 #ux_goal .text :nth-of-type(1){font-size: 36px; font-weight: 500; color: #fff; margin-bottom: 40px;}
 #ux_goal .text :nth-of-type(2){font-size: 50px; font-weight: 900; color: #fff;}
 
-#ux_goal .orange{background-color: #F57D31; color: #fff;} 
-
-
-#ux_goal .orange{background-color: #F57D31; color: #fff;} 
+#ux_goal .orange{background-color: #F57D31 !important; color: #fff !important;} 
 /* 오렌지 색 안먹음 */
 
 #ux_goal .box_1{position: absolute; left: 200px; display: flex; top: 410px;}
 #ux_goal .box_1 img{position: absolute; width: 200px;}
-#ux_goal .list1{position: absolute; display: flex; left: 240px; width: 400px; top: 30px;}
-#ux_goal .list2{position: absolute; display: flex; left: 240px; width: 400px; top: 110px;}
-#ux_goal .list1 li{background-color: #fff; border-radius: 50px; font-weight: 500; font-size: 24px; padding: 20px 30px; margin: 0 10px; text-align: center; color: #484848;}
-#ux_goal .list2 li{background-color: #fff; border-radius: 50px; font-weight: 500; font-size: 24px; padding: 20px 30px; margin: 0 10px; text-align: center; color: #484848;}
+#ux_goal .list1{position: absolute; display: flex; left: 240px; width: 1000px; top: 30px;flex-wrap:wrap;justify-content: flex;}
+#ux_goal .list1 li{background-color: #fff; border-radius: 50px; font-weight: 500; font-size: 24px; padding: 20px 30px; margin: 10px 10px; text-align: center; color: #484848;}
 
 #ux_goal .box_2{position: absolute; right: 200px; display: flex; top: 660px;}
 #ux_goal .box_2 img{position: absolute; width: 200px; right: 0;}
-#ux_goal .list3{position: absolute; display: flex; right: 240px; width: 400px; top: 30px;}
-#ux_goal .list4{position: absolute; display: flex; right: 240px; width: 400px;top: 110px;}
-#ux_goal .list3 li{background-color: #fff; border-radius: 50px; font-weight: 500; font-size: 24px; padding: 20px 30px; margin: 0 10px; text-align: center; color: #484848;}
-#ux_goal .list4 li{background-color: #fff; border-radius: 50px; font-weight: 500; font-size: 24px; padding: 20px 30px; margin: 0 10px; text-align: center; color: #484848;}
+#ux_goal .list2{position: absolute; display: flex; right: 240px; width: 1200px; top: 30px;flex-wrap:wrap;justify-content: flex-end;}
+#ux_goal .list2 li{background-color: #fff; border-radius: 50px; font-weight: 500; font-size: 24px; padding: 20px 30px; margin: 10px 10px; text-align: center; color: #484848;}
 
-#ux_goal .circle{position: absolute; width: 32px; height: 32px; border-radius: 100%; background-color: #F57D31; z-index: -1; top: calc(100vw * 1140 / 1920); left: calc(100vw * 885 / 1920);}
-#ux_goal .title{position: relative; text-align: center; z-index: 1; top: calc(100vw * 1150 / 1920);}
+#ux_goal .circle{position: absolute; width: 32px; height: 32px; border-radius: 100%; background-color: #F57D31; z-index: -1; top: calc(100vw * 1095 / 1920); left: calc(100vw * 890 / 1920);}
+#ux_goal .title{position: relative; text-align: center; z-index: 1; top: calc(100vw * 1100 / 1920);}
 #ux_goal .pretendard{font-size: 30px; font-weight: 600; color: #fff;}
 
 #ux_goal .trendy{position: absolute; width: 100%; text-align: center; color: #484848; top: 1460px;}
@@ -299,6 +294,7 @@ section#video iframe {width: 100%; height: 1200px}
 #style_guide .text{position: absolute; width: 100%; text-align: center; font-family: "Pretendard Variable"; font-weight: 400; font-size: 20px; top: 200px;}
 
 #style_guide .color{position: absolute; top: 350px;}
+#style_guide .color .subhead{margin-left: 200px; font-size: 30px; color: #F57D31; margin-bottom: 40px;}
 #style_guide .c_1{list-style: none; display: flex;}
 #style_guide .c_1 li:nth-of-type(1){width: 960px; height: 380px; background: #F57D31;}
 #style_guide .c_1 li:nth-of-type(2){width: 480px; height: 380px; background: #F6D046;}
