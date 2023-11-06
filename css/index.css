@@ -272,8 +272,8 @@ section#video iframe {width: 100%; height: 1200px}
 #ux_goal .list3 li{background-color: #fff; border-radius: 50px; font-weight: 500; font-size: 24px; padding: 20px 30px; margin: 0 10px; text-align: center; color: #484848;}
 #ux_goal .list4 li{background-color: #fff; border-radius: 50px; font-weight: 500; font-size: 24px; padding: 20px 30px; margin: 0 10px; text-align: center; color: #484848;}
 
-#ux_goal .circle{position: absolute; width: 32px; height: 32px; border-radius: 100%; background-color: #F57D31; z-index: -1; top: 1110px; left: 47.3%; transform: translate(-47.3%, 0);}
-#ux_goal .title{position: relative; text-align: center; z-index: 1; top: 1120px;}
+#ux_goal .circle{position: absolute; width: 32px; height: 32px; border-radius: 100%; background-color: #F57D31; z-index: -1; top: calc(100vw * 1140 / 1920); left: calc(100vw * 885 / 1920);}
+#ux_goal .title{position: relative; text-align: center; z-index: 1; top: calc(100vw * 1150 / 1920);}
 #ux_goal .pretendard{font-size: 30px; font-weight: 600; color: #fff;}
 
 #ux_goal .trendy{position: absolute; width: 100%; text-align: center; color: #484848; top: 1460px;}
@@ -299,7 +299,6 @@ section#video iframe {width: 100%; height: 1200px}
 #style_guide .text{position: absolute; width: 100%; text-align: center; font-family: "Pretendard Variable"; font-weight: 400; font-size: 20px; top: 200px;}
 
 #style_guide .color{position: absolute; top: 350px;}
-#style_guide .color .subhead{margin-left: 200px; font-size: 30px; color: #F57D31; margin-bottom: 40px;}
 #style_guide .c_1{list-style: none; display: flex;}
 #style_guide .c_1 li:nth-of-type(1){width: 960px; height: 380px; background: #F57D31;}
 #style_guide .c_1 li:nth-of-type(2){width: 480px; height: 380px; background: #F6D046;}
@@ -1626,28 +1625,11 @@ section#mockup1 {
     height: 100vh;
     max-height: 1200px;
     background-image: url(../img/Mockup1.png);
+    background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: center;
-}
-
-section#mockup1 .container {
-    width: calc(100vw * 1520 / 1920);
-    margin: 0 auto;
-    padding-top: 250px;
-    color: #FFF;
-}
-
-section#mockup1 .container h1 {
-    font-weight: 500;
-    font-size: var(--subtitle-size);
-    margin-top: 20px;
-}
-
-section#mockup1 .container p {
-    font-weight: 300;
-    font-size: var(--main-size);
-    margin-top: 30px;
+    background-size: cover;
+    display: inline-block;
+    position: relative;
 }
 
 /* mockup2 */
