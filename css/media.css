@@ -1,0 +1,36 @@
+/* 태블릿  */
+@media all and (min-width:768px) and (max-width:1023px) {
+    #wrap {max-width: ;}
+}
+
+/* 모바일 */
+@media all and (max-width:767px) {
+    #wrap {max-width: 767px;}
+    header {height: 40px; width: 100vw;}
+    header img {width: calc(100vw * 200 / 1920); margin-left: calc(100vw * 30 / 1920);}
+    header ul {margin-right: calc(100vw* 30 / 1920);}
+    header li {padding: 0 20px; font-size: 18px;}
+
+    section#main {height: 100vh;}
+    section#economy img {height: 100vh;}
+    section#economy .subhead {top: 200px; font-size: 28px;}
+    section#economy .pretendard {top: 350px; font-size: 20px;}
+    section#economy .economy_box .slider1 {top: 500px;} 
+    section#economy .economy_box .slider2 {top: 550px;}
+
+
+    
+    section#profile {height: calc(100vh - 300px);}
+    section#profile .container {width: calc(100vw - 20%); border: solid 1px red;}
+
+    footer {height: calc(100vw * 300 / 767);}
+    footer .container {width: calc(100vw * 607 / 767);}
+    footer .container .logo {padding-top: calc(100vw * 80 / 1920); width: 130px;}
+    footer .container .text {margin-top: calc(100vw * 40 / 767);}
+    footer .container .text li:nth-of-type(1) {margin-left: 0;}
+    footer .container .text li:nth-of-type(1)::before {content: "";}
+    footer .container .text li:nth-of-type(3)::after {content: "";}
+    footer .container .text li span {}
+    footer .container .text li p {font-size: 13px;}
+    footer .container .copyright {margin-top: 10px;}
+}

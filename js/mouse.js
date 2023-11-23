@@ -1,20 +1,20 @@
 //메뉴 이동
-$("#home").click(function () {
+$("#logo").click(function () {
     $('html, body').animate({
         scrollTop: $("#main").offset().top
     }, 800);
 });
-$("#planning").click(function () {
+$(".plan-nav").click(function () {
     $('html, body').animate({
         scrollTop: $("#economy").offset().top
     }, 800);
 });
-$("#design").click(function () {
+$(".design-nav").click(function () {
     $('html, body').animate({
         scrollTop: $("#service1").offset().top
     }, 800);
 });
-$("#contact").click(function () {
+$(".contact-nav").click(function () {
     $('html, body').animate({
         scrollTop: $("#profile").offset().top
     }, 800);

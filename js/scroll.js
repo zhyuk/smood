@@ -14,7 +14,7 @@ $(function () {
 
 // service1 영역 
 window.onscroll = function () {
-    console.log(window.scrollY);
+    // console.log(window.scrollY);
     progressBar();
 
     // service1 영역 타이틀,캐릭터 등장 및 제거
