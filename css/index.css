@@ -40,10 +40,6 @@
         --color-black: #484848;
         --color-white: #F4F4F4;
         --color-yellow: #F6D046;
-        /* font-size */
-        --title-size: 50px;
-        --subtitle-size: 35px;
-        --main-size: 20px;
 }
 
 /* public */
@@ -55,8 +51,7 @@ body {
         height: auto;
         background-color: var(--color-white);
         color: var(--color-black);
-        ;
-        font-size: 16px;
+        overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -914,7 +909,7 @@ header #nav li span:hover {
 #style .inner .font-nanum,
 #style .inner .logo,
 #style .inner .icon {
-        width: calc(100vw * 500 / 1920);
+        width: calc(100vw * 700 / 1920);
         height: calc(100vw * 500 / 1920);
 }
 
@@ -926,7 +921,7 @@ header #nav li span:hover {
 #style .inner .font-nanum,
 #style .inner .icon {
         float: right;
-        margin-right: calc(100vw * 100 / 1920);
+        margin-right: calc(100vw * 50 / 1920);
 }
 
 #style .inner .font-ptd .pretendard-title {
@@ -998,12 +993,14 @@ header #nav li span:hover {
 
 #style .inner .icon .icon-img {
         width: 100%;
-        text-align: center;
         margin-top: calc(100vw * 80 / 1920);
+        /* border: solid 1px red; */
 }
 
 #style .inner .icon .icon-img img {
-        width: 18%;
+        width: 15%;
+        margin: 2%;
+        /* border: solid 1px rebeccapurple; */
 }
 
 #style .inner .character {
@@ -1039,42 +1036,42 @@ header #nav li span:hover {
 }
 
 /* service1 */
-section#service1 {
+#service1 {
+        height: calc(100vw * 2400 / 1920);
         background-image: url(../img/service1_bg.png);
         background-repeat: no-repeat;
         background-size: 100%;
         background-position: center center;
-        height: 2400px;
 }
 
-section#service1 .title_box {
+#service1 .title_box {
         width: calc(100vw * 360 / 1920);
         padding-left: calc(100vw * 160 / 1920);
-        margin-top: 150px;
+        margin-top: calc(100vw * 150 / 1920);
         color: var(--color-orange);
-        font-size: var(--title-size);
+        font-size: calc(100vw * 50 / 1920);
         border-bottom: 1px solid var(--color-orange);
         display: inline-block;
         vertical-align: top;
         position: relative;
-        left: -400px;
+        /* left: -400px; */
         transition: all 1.2s;
 }
 
-section#service1 .title_box.active {
+#service1 .title_box.active {
         left: 0px;
 }
 
-section#service1 .main_box {
+#service1 .main_box {
         width: calc(100vw * 600 / 1920);
         margin-left: calc(100vw * 75 / 1920);
-        margin-top: 150px;
+        margin-top: calc(100vw * 150 / 1920);
         display: inline-block;
         line-height: 1.4;
         position: relative;
         z-index: 2;
-        opacity: 0;
-        top: 50px;
+        /* opacity: 0; */
+        top: 0;
         transition: all 1.5s;
 }
 
@@ -1084,7 +1081,7 @@ section#service1 .main_box.active {
 }
 
 section#service1 .main_box span {
-        font-size: var(--main-size);
+        font-size: calc(100vw * 20 / 1920);
 }
 
 section#service1 .main_box span:nth-of-type(1) {
@@ -1104,13 +1101,13 @@ section#service1 .main_box span:nth-of-type(3) {
 
 section#service1 .main_box .character {
         position: absolute;
-        top: -38px;
-        left: calc(100vw * 350 / 1920);
+        top: calc(100vw * -38 / 1920);
+        left: calc(100vw * 330 / 1920);
         z-index: -1;
 }
 
 section#service1 .main_box .character img {
-        width: 70px;
+        width: calc(100vw * 70 / 1920);
 }
 
 section#service1 .main_box .character img:nth-of-type(1) {
@@ -1128,12 +1125,12 @@ section#service1 .main_box .character img:nth-of-type(3) {
 section#service1 .container {
         width: calc(100vw * 1492 / 1920);
         margin: 0 auto;
-        margin-top: 97px;
+        margin-top: calc(100vw * 100 / 1920);
 }
 
 section#service1 .container img {
         width: calc(100vw * 350 / 1920);
-        margin-left: 20px;
+        margin-left: calc(100vw * 20 / 1920);
 }
 
 section#service1 .container .img_box {
@@ -1180,7 +1177,7 @@ section#service1 .container .img_box .img4.active {
 section#service1 .right {
         float: right;
         text-align: right;
-        margin-top: 150px;
+        margin-top: calc(100vw * 150 / 1920);
 }
 
 section#service1 .right .title_box {
@@ -1199,28 +1196,29 @@ section#service1 .right .title_box.active {
 section#service1 .right .main_box {
         margin-left: 0;
         margin-right: calc(100vw * 75 / 1920);
-        margin-top: 150px;
+        margin-top: calc(100vw * 150 / 1920);
         position: relative;
         opacity: 0;
-        top: 50px;
+        top: 0;
         transition: all 1.3s;
 
 }
 
 section#service1 .right .main_box.active {
         animation: fade 1.5s forwards ease;
-        top: 0;
+        top: calc(100vw * 100 / 1920);
+        opacity: 1;
 }
 
 section#service1 .right .main_box .character {
         position: absolute;
-        top: -5px;
+        top: calc(100vw * 0 / 1920);
         left: calc(100vw * 125 / 1920);
         z-index: -1;
 }
 
 section#service1 .right .main_box .character img {
-        width: 40px;
+        width: calc(100vw * 40 / 1920);
 }
 
 section#service1 .right .container {
@@ -1253,7 +1251,7 @@ section#service1 .img_box .img7.active {
 
 /* service2 */
 section#service2 {
-        height: 3000px;
+        height: calc(100vw * 3000 / 1920);
         background-image: url(../img/bg_circle.png), url(../img/bg_circle.png);
         background-repeat: no-repeat;
         background-size: calc(100vw * 1250 / 1920);
@@ -1263,7 +1261,7 @@ section#service2 {
 section#service2 .title_box {
         width: calc(100vw * 360 / 1920);
         padding-left: calc(100vw * 100 / 1920);
-        margin-top: 150px;
+        margin-top: calc(100vw * 150 / 1920);
         color: var(--color-orange);
         font-size: var(--title-size);
         border-bottom: 1px solid var(--color-orange);
@@ -1281,7 +1279,7 @@ section#service2 .title_box.active {
 section#service2 .main_box {
         width: calc(100vw * 600 / 1920);
         margin-left: calc(100vw * 75 / 1920);
-        margin-top: 150px;
+        margin-top: calc(100vw * 150 / 1920);
         display: inline-block;
         line-height: 1.4;
         position: relative;
@@ -1295,7 +1293,7 @@ section#service2 .main_box.active {
 }
 
 section#service2 .main_box span {
-        font-size: var(--main-size);
+        font-size: calc(100vw * 20 / 1920);
 }
 
 section#service2 .main_box span:nth-of-type(1) {
@@ -1315,13 +1313,13 @@ section#service2 .main_box span:nth-of-type(3) {
 
 section#service2 .main_box .character {
         position: absolute;
-        top: -38px;
+        top: calc(100vw * -38 / 1920);
         left: calc(100vw * 330 / 1920);
         z-index: -1;
 }
 
 section#service2 .main_box .character img {
-        width: 70px;
+        width: calc(100vw * 70 / 1920);
 }
 
 section#service2 .main_box .character img:nth-child(1) {
@@ -1339,7 +1337,7 @@ section#service2 .main_box .character img:nth-child(3) {
 section#service2 .container {
         width: calc(100vw * 1492 / 1920);
         margin: 0 auto;
-        margin-top: 160px;
+        margin-top: calc(100vw * 160 / 1920);
         position: relative;
 }
 
@@ -1357,7 +1355,7 @@ section#service2 .container .main_img {
 }
 
 section#service2 .container .line1 {
-        top: 450px;
+        top: calc(100vw * 450 / 1920);
         width: 0;
         left: calc(100vw * 420 / 1920);
 }
@@ -1367,7 +1365,7 @@ section#service2 .container .line1.active {
 }
 
 section#service2 .container .img2 {
-        top: 60px;
+        top: calc(100vw * 60 / 1920);
         left: calc(100vw * 580 / 1920);
         opacity: 0;
         z-index: 2;
@@ -1378,7 +1376,7 @@ section#service2 .container .img2.active {
 }
 
 section#service2 .container .line2 {
-        top: 120px;
+        top: calc(100vw * 120 / 1920);
         left: calc(100vw * 880 / 1920);
         width: 0;
 }
@@ -1389,9 +1387,9 @@ section#service2 .container .line2.active {
 
 section#service2 .container .text1 {
         width: calc(100vw * 430 / 1920);
-        height: 180px;
+        height: calc(100vw * 180 / 1920);
         position: absolute;
-        top: 120px;
+        top: calc(100vw * 120 / 1920);
         left: calc(100vw * 1050 / 1920);
         color: var(--color-black);
         opacity: 0;
@@ -1403,17 +1401,17 @@ section#service2 .container .text1.active {
 }
 
 section#service2 .container .text1 h1 {
-        font-size: 25px;
+        font-size: calc(100vw * 25 / 1920);
         font-weight: 800;
 }
 
 section#service2 .container .text1 p {
-        margin-top: 40px;
-        font-size: var(--main-size);
+        margin-top: calc(100vw * 40 / 1920);
+        font-size: calc(100vw * 20 / 1920);
 }
 
 section#service2 .container .line3 {
-        top: 450px;
+        top: calc(100vw * 450 / 1920);
         left: calc(100vw * 880 / 1920);
         width: 0;
 }
@@ -1434,7 +1432,7 @@ section#service2 .container .img3.active {
 }
 
 section#service2 .container .line4 {
-        top: 1020px;
+        top: calc(100vw * 1020 / 1920);
         left: calc(100vw * 1150 / 1920);
         z-index: 1;
         height: 0;
@@ -1447,9 +1445,9 @@ section#service2 .container .line4.active {
 
 section#service2 .container .text2 {
         width: calc(100vw * 300 / 1920);
-        height: 220px;
+        height: calc(100vw * 220 / 1920);
         position: absolute;
-        top: 1075px;
+        top: calc(100vw * 1075 / 1920);
         left: calc(100vw * 1220 / 1920);
         color: var(--color-black);
         opacity: 0;
@@ -1461,17 +1459,17 @@ section#service2 .container .text2.active {
 }
 
 section#service2 .container .text2 h1 {
-        font-size: 25px;
+        font-size: calc(100vw * 25 / 1920);
         font-weight: 800;
 }
 
 section#service2 .container .text2 p {
-        margin-top: 40px;
+        margin-top: calc(100vw * 40 / 1920);
         font-size: var(--main-size);
 }
 
 section#service2 .container .line5 {
-        top: 1400px;
+        top: calc(100vw * 1400 / 1920);
         left: calc(100vw * 390 / 1920);
         width: 0;
 }
@@ -1481,7 +1479,7 @@ section#service2 .container .line5.active {
 }
 
 section#service2 .container .img4 {
-        top: 1330px;
+        top: calc(100vw * 1330 / 1920);
         left: calc(100vw * 730 / 1920);
         opacity: 0;
 }
@@ -1492,7 +1490,7 @@ section#service2 .container .img4.active {
 }
 
 section#service2 .container .img5 {
-        top: 1330px;
+        top: calc(100vw * 1330 / 1920);
         left: calc(100vw * 1080 / 1920);
         opacity: 0;
         z-index: 2;
@@ -1504,7 +1502,7 @@ section#service2 .container .img5.active {
 }
 
 section#service2 .container .line6 {
-        top: 1780px;
+        top: calc(100vw * 1780 / 1920);
         left: calc(100vw * 1000 / 1920);
         height: 0;
 }
@@ -1518,7 +1516,7 @@ section#service2 .container .text3 {
         width: calc(100vw * 300 / 1920);
         height: 0;
         position: absolute;
-        top: 2020px;
+        top: calc(100vw * 2020 / 1920);
         left: calc(100vw * 800 / 1920);
         color: var(--color-black);
         overflow: hidden;
@@ -1530,19 +1528,19 @@ section#service2 .container .text3.active {
 }
 
 section#service2 .container .text3 h1 {
-        font-size: 25px;
+        font-size: calc(100vw * 25 / 1920);
         font-weight: 800;
 }
 
 section#service2 .container .text3 p {
-        margin-top: 40px;
-        font-size: var(--main-size);
+        margin-top: calc(100vw * 40 / 1920);
+        font-size: calc(100vw * 20 / 1920);
 }
 
 
 /* service3 */
 section#service3 {
-        height: 2700px;
+        height: calc(100vw * 2700 / 1920);
         background-image: url(../img/service3_bg.png);
         background-repeat: no-repeat;
         background-size: 100%;
@@ -1552,14 +1550,14 @@ section#service3 {
 section#service3 .title_box {
         width: calc(100vw * 360 / 1920);
         padding-left: calc(100vw * 260 / 1920);
-        margin-top: 150px;
+        margin-top: calc(100vw * 150 / 1920);
         color: var(--color-orange);
         font-size: var(--title-size);
         border-bottom: 1px solid var(--color-orange);
         display: inline-block;
         vertical-align: top;
         position: relative;
-        left: 500px;
+        left: calc(100vw * 500 / 1920);
         opacity: 0;
 }
 
@@ -1570,12 +1568,12 @@ section#service3 .title_box.active {
 section#service3 .main_box {
         width: calc(100vw * 600 / 1920);
         margin-left: calc(100vw * 75 / 1920);
-        margin-top: 150px;
+        margin-top: calc(100vw * 150 / 1920);
         display: inline-block;
         line-height: 1.4;
         position: relative;
         z-index: 2;
-        left: 600px;
+        left: calc(100vw * 600 / 1920);
         opacity: 0;
 }
 
@@ -1584,7 +1582,7 @@ section#service3 .main_box.active {
 }
 
 section#service3 .main_box span {
-        font-size: var(--main-size);
+        font-size: calc(100vw * 20 / 1920);
 }
 
 section#service3 .main_box span:nth-of-type(1) {
@@ -1605,7 +1603,7 @@ section#service3 .main_box span:nth-of-type(3) {
 section#service3 .container {
         width: calc(100vw * 1492 / 1920);
         margin: 0 auto;
-        margin-top: 160px;
+        margin-top: calc(100vw * 160 / 1920);
         display: flex;
         align-items: flex-start;
         position: relative;
@@ -1649,7 +1647,7 @@ section#service3 .container .img3.active {
 
 section#service3 .container .line7 {
         position: absolute;
-        top: 595px;
+        top: calc(100vw * 595 / 1920);
         left: calc(100vw * 180 / 1920);
         height: 0;
 }
@@ -1661,7 +1659,7 @@ section#service3 .container .line7.active {
 
 section#service3 .container .line8 {
         position: absolute;
-        top: 350px;
+        top: calc(100vw * 350 / 1920);
         left: calc(100vw * 1130 / 1920);
         width: 0;
 }
@@ -1673,9 +1671,9 @@ section#service3 .container .line8.active {
 
 section#service3 .container .text1 {
         width: calc(100vw * 250 / 1920);
-        height: 150px;
+        height: calc(100vw * 150 / 1920);
         position: absolute;
-        top: 680px;
+        top: calc(100vw * 680 / 1920);
         left: calc(100vw * -80 / 1920);
         color: var(--color-black);
         text-align: right;
@@ -1688,20 +1686,20 @@ section#service3 .container .text1.active {
 }
 
 section#service3 .container .text1 h1 {
-        font-size: var(--main-size);
+        font-size: calc(100vw * 20 / 1920);
         font-weight: 800;
 }
 
 section#service3 .container .text1 p {
-        margin-top: 15px;
-        font-size: var(--main-size);
+        margin-top: calc(100vw * 15 / 1920);
+        font-size: calc(100vw * 20 / 1920);
 }
 
 section#service3 .container .text2 {
         width: calc(100vw * 300 / 1920);
-        height: 220px;
+        height: calc(100vw * 220 / 1920);
         position: absolute;
-        top: 360px;
+        top: calc(100vw * 360 / 1920);
         left: calc(100vw * 1330 / 1920);
         color: var(--color-black);
         opacity: 0;
@@ -1718,21 +1716,21 @@ section#service3 .container .text2 h1 {
 }
 
 section#service3 .container .text2 p {
-        margin-top: 15px;
-        font-size: var(--main-size);
+        margin-top: calc(100vw * 15 / 1920);
+        font-size: calc(100vw * 20 / 1920);
 }
 
 section#service3 .right {
         float: right;
         text-align: right;
-        margin-top: 150px;
+        margin-top: calc(100vw * 150 / 1920);
 }
 
 section#service3 .right .title_box {
         padding-left: 0;
         padding-right: calc(100vw * 115 / 1920);
-        margin-top: 150px;
-        left: 500px;
+        margin-top: calc(100vw * 150 / 1920);
+        left: calc(100vw * 500 / 1920);
         opacity: 0;
 }
 
@@ -1740,13 +1738,13 @@ section#service3 .right .main_box {
         margin-left: 0;
         margin-right: calc(100vw * 75 / 1920);
         margin-top: 150px;
-        left: 600px;
+        left: calc(100vw * 600 / 1920);
         opacity: 0;
 }
 
 section#service3 .container .line9 {
         position: absolute;
-        top: 580px;
+        top: calc(100vw * 580 / 1920);
         left: calc(100vw * 1300 / 1920);
         opacity: 0;
 }
@@ -1757,9 +1755,9 @@ section#service3 .container .line9.active {
 
 section#service3 .container .text3 {
         width: calc(100vw * 200 / 1920);
-        height: 100px;
+        height: calc(100vw * 100 / 1920);
         position: absolute;
-        top: 610px;
+        top: calc(100vw * 610 / 1920);
         left: calc(100vw * 730 / 1920);
         color: var(--color-black);
         text-align: right;
@@ -1771,17 +1769,17 @@ section#service3 .container .text3.active {
 }
 
 section#service3 .container .text3 h1 {
-        font-size: var(--main-size);
+        font-size: calc(100vw * 20 / 1920);
         font-weight: 800;
 }
 
 section#service3 .container .text3 p {
-        margin-top: 15px;
-        font-size: var(--main-size);
+        margin-top: calc(100vw * 15 / 1920);
+        font-size: calc(100vw * 20 / 1920);
 }
 
 section#service3 .container .function_img {
-        margin-top: 180px;
+        margin-top: calc(100vw * 180 / 1920);
         width: calc(100vw * 300 / 1920);
         opacity: 0;
 }
@@ -1825,22 +1823,22 @@ section#service3 .container .main_img.active {
 
 /* service4 */
 section#service4 {
-        height: 3000px;
+        height: calc(100vw * 3000 / 1920);
         background-image: url(../img/bg_circle.png), url(../img/bg_circle.png);
         background-repeat: no-repeat;
-        background-size: 1250px 1250px, 1250px 1250px;
+        background-size: calc(100vw * 1250 / 1920) calc(100vw * 1250 / 1920), calc(100vw * 1250 / 1920) calc(100vw * 1250 / 1920);
         background-position: -80% -25%, 220% 130%;
         position: relative;
 }
 
 section#service4 .bg_box {
         width: calc(100vw * 405 / 1920);
-        height: 35px;
-        margin-top: 190px;
+        height: calc(100vw * 35 / 1920);
+        margin-top: calc(100vw * 190 / 1920);
         background-color: var(--color-orange);
         position: absolute;
         z-index: 3;
-        left: -700px;
+        left: calc(100vw * -700 / 1920);
         transition: all 1.6s;
 }
 
@@ -1852,7 +1850,7 @@ section#service4 .bg_box .character_box,
 section#service4 .bg_box_right .character_box {
         width: calc(100vw * 260 / 1920);
         position: absolute;
-        top: -65px;
+        top: calc(100vw * -65 / 1920);
         left: calc(100vw * 140 / 1920);
         z-index: 2;
 }
@@ -1866,9 +1864,9 @@ section#service4 .title_box {
         display: inline-block;
         width: calc(100vw * 360 / 1920);
         padding-left: calc(100vw * 150 / 1920);
-        margin-top: 330px;
+        margin-top: calc(100vw * 330 / 1920);
         color: var(--color-orange);
-        font-size: var(--title-size);
+        font-size: calc(100vw * 50 / 1920);
         border-bottom: 1px solid var(--color-orange);
         vertical-align: top;
         opacity: 0;
@@ -1883,7 +1881,7 @@ section#service4 .main_box {
         display: inline-block;
         width: calc(100vw * 600 / 1920);
         margin-left: calc(100vw * 75 / 1920);
-        margin-top: 330px;
+        margin-top: calc(100vw * 330 / 1920);
         line-height: 1.4;
         position: relative;
         opacity: 0;
@@ -1895,7 +1893,7 @@ section#service4 .main_box.active {
 }
 
 section#service4 .main_box span {
-        font-size: var(--main-size);
+        font-size: calc(100vw * 20 / 1920);
         color: var(--color-black);
 }
 
@@ -1908,7 +1906,7 @@ section#service4 .main_box span.check {
 section#service4 .container {
         width: calc(100vw * 1500 / 1920);
         margin: 0 auto;
-        margin-top: 165px;
+        margin-top: calc(100vw * 165 / 1920);
         position: relative;
         display: flex;
         align-items: flex-start;
@@ -1935,23 +1933,23 @@ section#service4 .container svg {
 }
 
 section#service4 .container .line10 {
-        top: 460px;
+        top: calc(100vw * 460 / 1920);
         left: calc(100vw * 280 / 1920);
 }
 
 section#service4 .container .line11 {
-        top: 350px;
+        top: calc(100vw * 350 / 1920);
         left: calc(100vw * 1100 / 1920);
 }
 
 section#service4 .container .text1 {
         width: calc(100vw * 380 / 1920);
-        height: 120px;
-        font-size: var(--main-size);
+        height: calc(100vw * 120 / 1920);
+        font-size: calc(100vw * 20 / 1920);
         color: var(--color-black);
         text-align: right;
         position: absolute;
-        top: 470px;
+        top: calc(100vw * 470 / 1920);
         left: calc(100vw * -85 / 1920);
 }
 
@@ -1968,21 +1966,21 @@ section#service4 .container .text2 p {
 
 section#service4 .container .text2 {
         width: calc(100vw * 380 / 1920);
-        height: 120px;
-        font-size: var(--main-size);
+        height: calc(100vw * 120 / 1920);
+        font-size: calc(100vw * 20 / 1920);
         color: var(--color-black);
         position: absolute;
-        top: 360px;
+        top: calc(100vw * 360 / 1920);
         left: calc(100vw * 1200 / 1920);
 }
 
 section#service4 .bg_box_right {
         width: calc(100vw * 405 / 1920);
-        height: 35px;
-        margin-top: 170px;
+        height: calc(100vw * 35 / 1920);
+        margin-top: calc(100vw * 170 / 1920);
         background-color: var(--color-orange);
         position: absolute;
-        right: -500px;
+        right: calc(100vw * -500 / 1920);
         z-index: 3;
         transition: all 2s;
 }
@@ -2044,7 +2042,7 @@ section#service4 .container img.container2-img.active {
 
 section#service4 .container .line12 {
         position: absolute;
-        top: 650px;
+        top: calc(100vw * 650 / 1920);
         left: calc(100vw * 300 / 1920);
         width: 0;
 }
@@ -2057,7 +2055,7 @@ section#service4 .container .line12.active {
 section#service4 .container img.mockup-img {
         width: calc(100vw * 420 / 1920);
         margin-left: calc(100vw * 125 / 1920);
-        margin-top: 35px;
+        margin-top: calc(100vw * 35 / 1920);
         z-index: 2;
         opacity: 0;
 }
@@ -2070,7 +2068,7 @@ section#service4 .container img.mockup-img.active {
 section#service4 .container img.mockup-fnc {
         width: calc(100vw * 645 / 1920);
         position: absolute;
-        top: 350px;
+        top: calc(100vw * 350 / 1920);
         left: calc(100vw * 380 / 1920);
         z-index: 3;
         opacity: 0;
@@ -2083,7 +2081,7 @@ section#service4 .container img.mockup-fnc.active {
 
 section#service4 .container .line13 {
         position: absolute;
-        top: 560px;
+        top: calc(100vw * 560 / 1920);
         left: calc(100vw * 930 / 1920);
         height: 0;
 }
@@ -2095,7 +2093,7 @@ section#service4 .container .line13.active {
 
 section#service4 .container .img6 {
         position: absolute;
-        top: 450px;
+        top: calc(100vw * 450 / 1920);
         left: calc(100vw * 1080 / 1920);
         opacity: 0;
 }
@@ -2107,14 +2105,14 @@ section#service4 .container .img6.active {
 
 /* service5 */
 section#service5 {
-        height: 1800px;
+        height: calc(100vw * 1800 / 1920);
         background-color: var(--color-white);
 
 }
 
 section#service5 .bg_box {
         width: calc(100vw * 405 / 1920);
-        height: 35px;
+        height: calc(100vw * 35 / 1920);
         background-color: var(--color-orange);
         position: absolute;
         z-index: 3;
@@ -2128,7 +2126,7 @@ section#service5 .bg_box.active {
 section#service5 .bg_box .character_box {
         width: calc(100vw * 260 / 1920);
         position: absolute;
-        top: -65px;
+        top: calc(100vw * -65 / 1920);
         left: calc(100vw * 140 / 1920);
         z-index: 2;
 }
@@ -2141,9 +2139,9 @@ section#service5 .title_box {
         display: inline-block;
         width: calc(100vw * 360 / 1920);
         padding-left: calc(100vw * 100 / 1920);
-        margin-top: 330px;
+        margin-top: calc(100vw * 330 / 1920);
         color: var(--color-orange);
-        font-size: var(--title-size);
+        font-size: calc(100vw * 50 / 1920);
         border-bottom: 1px solid var(--color-orange);
         vertical-align: top;
 }
@@ -2152,21 +2150,21 @@ section#service5 .main_box {
         display: inline-block;
         width: calc(100vw * 600 / 1920);
         margin-left: calc(100vw * 75 / 1920);
-        margin-top: 330px;
+        margin-top: calc(100vw * 330 / 1920);
         line-height: 1.4;
         position: relative;
 }
 
 section#service5 .main_box h1 {
-        font-size: 30px;
+        font-size: calc(100vw * 30 / 1920);
         font-weight: 700;
         color: var(--color-black);
-        margin-bottom: 15px;
+        margin-bottom: calc(100vw * 15 / 1920);
         animation: flash 6s ease-out infinite;
 }
 
 section#service5 .main_box span {
-        font-size: var(--main-size);
+        font-size: calc(100vw * 20 / 1920);
         color: var(--color-black);
 }
 
@@ -2178,9 +2176,9 @@ section#service5 .main_box span.check {
 
 section#service5 .container {
         width: calc(100vw * 1500 / 1920);
-        height: 900px;
+        height: calc(100vw * 900 / 1920);
         margin: 0 auto;
-        margin-top: 170px;
+        margin-top: calc(100vw * 170 / 1920);
         position: relative;
 }
 
@@ -2197,8 +2195,8 @@ section#service5 .container svg.active {
 }
 
 section#service5 .container .btn {
-        width: 50px;
-        height: 50px;
+        width: calc(100vw * 50 / 1920);
+        height: calc(100vw * 50 / 1920);
         background-color: var(--color-orange);
         border-radius: 100%;
 }
@@ -2214,7 +2212,8 @@ section#service5 .container .btn.active {
 
 section#service5 .container span {
         font-weight: 700;
-        font-size: var(--main-size);
+        font-size: calc(100vw * 20 / 1920);
+        ;
         color: var(--color-black);
 }
 
@@ -2278,7 +2277,8 @@ section#service5 .container .content {
         width: calc(100vw * 763 / 1920);
         height: calc(100vw * 763 / 1920);
         position: absolute;
-        top: 110px;
+        top: calc(100vw * 110 / 1920);
+        ;
         left: calc(100vw * 750 / 1920);
         transform: translateX(-50%);
         background: linear-gradient(to right, #F57D31, #F7E9B3 50%, #FFF 50%);
@@ -2288,7 +2288,8 @@ section#service5 .container .content {
 section#service5 .container .content .mockup {
         width: calc(100vw * 300 / 1920);
         position: absolute;
-        top: 70px;
+        top: calc(100vw * 70 / 1920);
+        ;
         left: calc(100vw * 50 / 1920);
         opacity: 0;
         z-index: 2;
@@ -2301,17 +2302,17 @@ section#service5 .container .content .mockup.active {
 
 section#service5 .container .content .line13 {
         position: absolute;
-        top: 330px;
+        top: calc(100vw * 330 / 1920);
         left: calc(100vw * 390 / 1920);
 }
 
 section#service5 .container .content .text {
         width: calc(100vw * 260 / 1920);
-        height: 130px;
-        font-size: var(--main-size);
+        height: calc(100vw * 130 / 1920);
+        font-size: calc(100vw * 20 / 1920);
         color: var(--color-black);
         position: absolute;
-        top: 340px;
+        top: calc(100vw * 340 / 1920);
         left: calc(100vw * 500 / 1920);
         opacity: 0;
 }
@@ -2321,7 +2322,7 @@ section#service5 .container .content .text h1 {
 }
 
 section#service5 .container .content .text p {
-        margin-top: 12px;
+        margin-top: calc(100vw * 12 / 1920);
         font-weight: 400;
 }
 
@@ -2332,20 +2333,20 @@ section#service5 .container .content .text.active {
 
 /* mockup1 */
 section#mockup1 {
-        height: 100vh;
-        max-height: 1200px;
+        height: calc(100vw * 1200 / 1920);
+        /* max-height: 1200px; */
         background-image: url(../img/Mockup1.png);
         background-attachment: fixed;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 100% 100%;
         display: inline-block;
         position: relative;
 }
 
 /* mockup2 */
 section#mockup2 {
-        height: 100vh;
-        max-height: 1200px;
+        height: calc(100vw * 1200 / 1920);
+        /* max-height: 1200px; */
         background-image: url(../img/Mockup2.png);
         background-repeat: no-repeat;
         background-size: 100% 100%;
@@ -2355,26 +2356,26 @@ section#mockup2 {
 section#mockup2 .container {
         width: calc(100vw * 1520 / 1920);
         margin: 0 auto;
-        padding-top: 250px;
+        padding-top: calc(100vw * 250 / 1920);
         color: #FFF;
 }
 
 section#mockup2 .container h1 {
         font-weight: 500;
-        font-size: var(--subtitle-size);
-        margin-top: 20px;
+        font-size: calc(100vw * 35 / 1920);
+        margin-top: calc(100vw * 20 / 1920);
 }
 
 section#mockup2 .container p {
         font-weight: 300;
-        font-size: var(--main-size);
-        margin-top: 30px;
+        font-size: calc(100vw * 20 / 1920);
+        margin-top: calc(100vw * 30 / 1920);
 }
 
 /* profile */
 section#profile {
-        height: 100vh;
-        max-height: 1200px;
+        height: calc(100vw * 1200 / 1920);
+        /* max-height: 1200px; */
 }
 
 section#profile .container {
@@ -2384,7 +2385,7 @@ section#profile .container {
 
 section#profile .container h1 {
         margin-top: calc(100vw * 220 / 1920);
-        font-size: 50px;
+        font-size: calc(100vw * 50 / 1920);
         font-weight: 700;
         color: var(--color-black);
 }
@@ -2418,14 +2419,14 @@ section#profile ul.profile li p {
         width: 90%;
         margin: 0;
         font-weight: 700;
-        font-size: 20px;
+        font-size: calc(100vw * 20 / 1920);
         color: #FFF;
         opacity: 0;
         transition: all .5s ease-in-out;
 }
 
 section#profile ul.profile li:nth-of-type(1) {
-        border: solid 6px #FE6559;
+        border: solid calc(100vw * 6 / 1920) #FE6559;
         background-image: url(../img/profile1.png);
         background-repeat: no-repeat;
         background-size: calc(100vw * 295 / 1920);
@@ -2433,11 +2434,11 @@ section#profile ul.profile li:nth-of-type(1) {
 }
 
 section#profile ul.profile li:nth-of-type(1)::before {
-        content: url(../img/character1.png);
-        width: calc(100vw * 50 / 1920);
+        content: url(../img/character_1.png);
+        transform: scale(0.3);
         position: absolute;
-        top: calc(100vw * 200 / 1920);
-        left: calc(100vw * 30 / 1920);
+        top: calc(100vw * 150 / 1920);
+        left: calc(100vw * -20 / 1920);
 }
 
 section#profile ul.profile li:nth-of-type(1):hover {
@@ -2450,7 +2451,7 @@ section#profile ul.profile li:nth-of-type(1):hover p {
 }
 
 section#profile ul.profile li:nth-of-type(2) {
-        border: solid 6px #F6701B;
+        border: solid calc(100vw * 6 / 1920) #F6701B;
         background-image: url(../img/profile2.png);
         background-repeat: no-repeat;
         background-size: calc(100vw * 311 / 1920);
@@ -2458,11 +2459,11 @@ section#profile ul.profile li:nth-of-type(2) {
 }
 
 section#profile ul.profile li:nth-of-type(2)::before {
-        content: url(../img/character2.png);
-        width: calc(100vw * 50 / 1920);
+        content: url(../img/character_2.png);
+        transform: scale(0.3);
         position: absolute;
-        top: calc(100vw * 210 / 1920);
-        left: calc(100vw * 30 / 1920);
+        top: calc(100vw * 150 / 1920);
+        left: calc(100vw * -20 / 1920);
 }
 
 section#profile ul.profile li:nth-of-type(2):hover {
@@ -2475,7 +2476,7 @@ section#profile ul.profile li:nth-of-type(2):hover p {
 }
 
 section#profile ul.profile li:nth-of-type(3) {
-        border: solid 6px #FFD727;
+        border: solid calc(100vw * 6 / 1920) #FFD727;
         background-image: url(../img/profile3.png);
         background-repeat: no-repeat;
         background-size: calc(100vw * 311 / 1920);
@@ -2483,11 +2484,11 @@ section#profile ul.profile li:nth-of-type(3) {
 }
 
 section#profile ul.profile li:nth-of-type(3)::before {
-        content: url(../img/character3.png);
-        width: calc(100vw * 50 / 1920);
+        content: url(../img/character_3.png);
+        transform: scale(0.3);
         position: absolute;
-        top: calc(100vw * 200 / 1920);
-        left: calc(100vw * 30 / 1920);
+        top: calc(100vw * 150 / 1920);
+        left: calc(100vw * -20 / 1920);
 }
 
 section#profile ul.profile li:nth-of-type(3):hover {
@@ -2500,7 +2501,7 @@ section#profile ul.profile li:nth-of-type(3):hover p {
 }
 
 section#profile ul.profile li:nth-of-type(4) {
-        border: solid 6px #A4E445;
+        border: solid calc(100vw * 6 / 1920) #A4E445;
         background-image: url(../img/profile4.png);
         background-repeat: no-repeat;
         background-size: calc(100vw * 311 / 1920);
@@ -2508,11 +2509,11 @@ section#profile ul.profile li:nth-of-type(4) {
 }
 
 section#profile ul.profile li:nth-of-type(4)::before {
-        content: url(../img/character4.png);
-        width: calc(100vw * 50 / 1920);
+        content: url(../img/character_4.png);
+        transform: scale(0.3);
         position: absolute;
-        top: calc(100vw * 210 / 1920);
-        left: calc(100vw * 30 / 1920);
+        top: calc(100vw * 170 / 1920);
+        left: calc(100vw * -20 / 1920);
 }
 
 section#profile ul.profile li:nth-of-type(4):hover {
@@ -2525,7 +2526,7 @@ section#profile ul.profile li:nth-of-type(4):hover p {
 }
 
 section#profile ul.profile li:nth-of-type(5) {
-        border: solid 6px #5299FF;
+        border: solid calc(100vw * 6 / 1920) #5299FF;
         background-image: url(../img/profile5.png);
         background-repeat: no-repeat;
         background-size: calc(100vw * 320 / 1920);
@@ -2533,11 +2534,11 @@ section#profile ul.profile li:nth-of-type(5) {
 }
 
 section#profile ul.profile li:nth-of-type(5)::before {
-        content: url(../img/character5.png);
-        width: calc(100vw * 50 / 1920);
+        content: url(../img/character_5.png);
+        transform: scale(0.3);
         position: absolute;
-        top: calc(100vw * 200 / 1920);
-        left: calc(100vw * 30 / 1920);
+        top: calc(100vw * 190 / 1920);
+        left: calc(100vw * -20 / 1920);
 }
 
 section#profile ul.profile li:nth-of-type(5):hover {
@@ -2560,13 +2561,13 @@ section#profile ul.text li {
 
 section#profile ul.text li h1 {
         margin-top: calc(100vw * 105 / 1920);
-        font-size: 40px;
+        font-size: calc(100vw * 40 / 1920);
         font-weight: 900;
         color: var(--color-black);
 }
 
 section#profile ul.text li .major {
-        font-size: var(--main-size);
+        font-size: calc(100vw * 20 / 1920);
         font-weight: 900;
         padding-bottom: calc(100vw * 16 / 1920);
         color: var(--color-orange);
@@ -2602,7 +2603,6 @@ footer .container {
 
 footer .container .logo {
         padding-top: calc(100vw * 125 / 1920);
-        animation: logo .5s ease infinite;
 }
 
 footer .container .text {
@@ -2624,6 +2624,7 @@ footer .container .text li:nth-of-type(1) {
 
 footer .container .text li:nth-of-type(1)::before {
         content: url(../img/character_blue.png);
+        width: 4%;
         position: absolute;
         top: calc(100vw * 50 / 1920);
         left: calc(100vw * 350 / 1920);
@@ -2641,21 +2642,21 @@ footer .container .text li:nth-of-type(3)::after {
 
 footer .container .text li span {
         font-weight: 500;
-        font-size: 18px;
+        font-size: calc(100vw * 18 / 1920);
         margin-bottom: calc(100vw * 40 / 1920);
 }
 
 footer .container .text li p {
         font-weight: 300;
-        font-size: 15px;
+        font-size: calc(100vw * 15 / 1920);
         line-height: 1.3;
 }
 
 footer .container .copyright {
         position: relative;
-        padding: 20px 0;
+        padding: calc(100vw * 20 / 1920) 0;
         font-weight: 300;
         background-color: var(--color-orange);
         z-index: 3;
-        border-top: solid 1px var(--color-white);
+        border-top: solid calc(100vw * 1 / 1920) var(--color-white);
 }
