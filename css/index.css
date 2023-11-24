@@ -2303,6 +2303,7 @@ section#service5 .container svg {
 
 section#service5 .container svg.active {
         animation: rotate 2s linear infinite;
+        opacity: 1;
 }
 
 section#service5 .container .btn {
