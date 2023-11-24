@@ -39,17 +39,23 @@ section {
 .clear {
     clear: both;
 }
+
+/* desktop */
 @media screen and (min-width: 769px) {
+    .nav-mobile {display: none;}
     .hide-on-mobile {display: none;} 
     .desktop {display: inline-block;}
 }
+
+/* mobile */
 @media screen and (max-width: 768px) {
     .hide-on-mobile {display: inline-block;}
     .desktop {display: none;}  
     
     header{position: relative; width: 100%; height: calc(100vw * 50 / 768); background-color: #F57D31; text-align: center;}
-    header .hamburger{position: absolute; left: calc(100vw * 40 / 768); top: 60%; width: calc(100vw * 56 / 768);}
-    header .hamburger img{width: 100%;}
+    header #nav {display: none;}
+    /* header .hamburger{position: absolute; left: calc(100vw * 40 / 768); top: 60%; width: calc(100vw * 56 / 768);}
+    header .hamburger img{width: 100%;} */
     header .head_logo{position: absolute; top: 60%; left: 50%; width: calc(100vw * 200 / 768); transform: translateX(-50%);}
     header .head_logo img{width: 100%;}
 
