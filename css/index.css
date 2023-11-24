@@ -156,7 +156,8 @@ header .nav-mobile span:nth-child(3) {
 }
 
 /* TopButton */
-/* #ScrollTop {
+
+#ScrollTop {
         position: fixed;
         bottom: calc(100vw * 60 / 1920);
         right: 0;
@@ -176,7 +177,7 @@ header .nav-mobile span:nth-child(3) {
 #ScrollTop:hover {
         background-color: var(--color-orange);
         color: #FFF;
-} */
+}
 
 /* main */
 #main {
