@@ -900,7 +900,7 @@ header .nav-mobile span:nth-child(3) {
 
 /* style */
 #style {
-        height: calc(100vw * 3000 / 1920);
+        height: calc(100vw * 3100 / 1920);
 }
 
 #style .container {
