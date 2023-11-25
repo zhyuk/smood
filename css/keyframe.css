@@ -62,7 +62,8 @@
 }
 
 @keyframes line11 {
-    0% {}
+    0% {width: 0;}
+    100% {width: calc(100vw * 115 / 1920);}
 }
 @keyframes line12 {
     0% {width: 0;}
@@ -119,7 +120,7 @@
 @keyframes moveToBottom {
     0% {opacity: 0;}
     60% {opacity: 0;}
-    100% {top: 0; opacity: 1;}
+    100% {top: calc(100vw * 150 / 1920); opacity: 1;}
 }
 
 @keyframes fadeIn {
