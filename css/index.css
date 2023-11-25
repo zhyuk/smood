@@ -378,7 +378,7 @@ header .nav-mobile span:nth-child(3) {
 }
 
 /* video */
-#video {
+section#video {
         z-index: 1;
 }
 #video .container {
