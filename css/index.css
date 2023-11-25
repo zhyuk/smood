@@ -482,7 +482,7 @@ header .nav-mobile span:nth-child(3) {
 
 /* focus */
 #focus {
-        height: calc(100vw * 2200 / 1920);
+        height: calc(100vw * 2600 / 1920);
 }
 
 #focus .container {
@@ -1290,7 +1290,7 @@ section#service1 .container .img_box .img4.active {
 
 section#service1 .right {
         float: right;
-        text-align: right;
+        text-align: right;      
         margin-top: calc(100vw * 150 / 1920);
 }
 
@@ -1327,7 +1327,7 @@ section#service1 .right .main_box.active {
 section#service1 .right .main_box .character {
         position: absolute;
         top: calc(100vw * 0 / 1920);
-        left: calc(100vw * 125 / 1920);
+        left: calc(100vw * 155 / 1920);
         z-index: -1;
 }
 
@@ -1428,7 +1428,7 @@ section#service2 .main_box span:nth-of-type(3) {
 section#service2 .main_box .character {
         position: absolute;
         top: calc(100vw * -38 / 1920);
-        left: calc(100vw * 330 / 1920);
+        left: calc(100vw * 300 / 1920);
         z-index: -1;
 }
 
@@ -1472,6 +1472,8 @@ section#service2 .container .line1 {
         top: calc(100vw * 450 / 1920);
         width: 0;
         left: calc(100vw * 420 / 1920);
+        /* animation: line1 1s ease infinite; */
+
 }
 
 section#service2 .container .line1.active {
@@ -1503,7 +1505,7 @@ section#service2 .container .text1 {
         width: calc(100vw * 430 / 1920);
         height: calc(100vw * 180 / 1920);
         position: absolute;
-        top: calc(100vw * 120 / 1920);
+        top: calc(100vw * 125 / 1920);
         left: calc(100vw * 1050 / 1920);
         color: var(--color-black);
         opacity: 0;
@@ -1535,8 +1537,8 @@ section#service2 .container .line3.active {
 }
 
 section#service2 .container .img3 {
-        top: calc(100vw * 440 / 1920);
-        left: calc(100vw * 1080 / 1920);
+        top: calc(100vw * 400 / 1920);
+        left: calc(100vw * 1000 / 1920);
         opacity: 0;
         z-index: 2;
 }
@@ -1546,7 +1548,7 @@ section#service2 .container .img3.active {
 }
 
 section#service2 .container .line4 {
-        top: calc(100vw * 1020 / 1920);
+        top: calc(100vw * 1030 / 1920);
         left: calc(100vw * 1150 / 1920);
         z-index: 1;
         height: 0;
@@ -1561,7 +1563,7 @@ section#service2 .container .text2 {
         width: calc(100vw * 300 / 1920);
         height: calc(100vw * 220 / 1920);
         position: absolute;
-        top: calc(100vw * 1075 / 1920);
+        top: calc(100vw * 1090 / 1920);
         left: calc(100vw * 1220 / 1920);
         color: var(--color-black);
         opacity: 0;
@@ -1630,7 +1632,7 @@ section#service2 .container .text3 {
         width: calc(100vw * 300 / 1920);
         height: 0;
         position: absolute;
-        top: calc(100vw * 2020 / 1920);
+        top: calc(100vw * 2050 / 1920);
         left: calc(100vw * 800 / 1920);
         color: var(--color-black);
         overflow: hidden;
@@ -1761,9 +1763,10 @@ section#service3 .container .img3.active {
 
 section#service3 .container .line7 {
         position: absolute;
-        top: calc(100vw * 595 / 1920);
+        top: calc(100vw * 610 / 1920);
         left: calc(100vw * 180 / 1920);
         height: 0;
+        z-index: -1;
 }
 
 section#service3 .container .line7.active {
@@ -1787,7 +1790,7 @@ section#service3 .container .text1 {
         width: calc(100vw * 250 / 1920);
         height: calc(100vw * 150 / 1920);
         position: absolute;
-        top: calc(100vw * 680 / 1920);
+        top: calc(100vw * 710 / 1920);
         left: calc(100vw * -80 / 1920);
         color: var(--color-black);
         text-align: right;
@@ -1814,7 +1817,7 @@ section#service3 .container .text2 {
         height: calc(100vw * 220 / 1920);
         position: absolute;
         top: calc(100vw * 360 / 1920);
-        left: calc(100vw * 1330 / 1920);
+        left: calc(100vw * 1380 / 1920);
         color: var(--color-black);
         opacity: 0;
 }
@@ -1825,7 +1828,7 @@ section#service3 .container .text2.active {
 }
 
 section#service3 .container .text2 h1 {
-        font-size: calc(100vw * 50 / 1920);
+        font-size: calc(100vw * 20 / 1920);
         font-weight: 800;
 }
 
@@ -2029,7 +2032,7 @@ section#service4 .container {
 section#service4 .container img {
         width: calc(100vw * 300 / 1920);
         margin-left: calc(100vw * 80 / 1920);
-        opacity: 0;
+        /* opacity: 0; */
         z-index: 2;
 }
 
@@ -2049,8 +2052,12 @@ section#service4 .container svg {
 section#service4 .container .line10 {
         top: calc(100vw * 460 / 1920);
         left: calc(100vw * 280 / 1920);
+        width: 0;
 }
 
+section#service4 .container .line10.active {
+        animation: line10 2s ease forwards;
+}
 section#service4 .container .line11 {
         top: calc(100vw * 350 / 1920);
         left: calc(100vw * 1100 / 1920);
@@ -2065,6 +2072,7 @@ section#service4 .container .text1 {
         position: absolute;
         top: calc(100vw * 470 / 1920);
         left: calc(100vw * -85 / 1920);
+        opacity: 0;
 }
 
 section#service4 .container .text1 h1,
@@ -2085,7 +2093,8 @@ section#service4 .container .text2 {
         color: var(--color-black);
         position: absolute;
         top: calc(100vw * 360 / 1920);
-        left: calc(100vw * 1200 / 1920);
+        left: calc(100vw * 1210 / 1920);
+        opacity: 0;
 }
 
 section#service4 .bg_box_right {

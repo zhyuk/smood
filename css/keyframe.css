@@ -56,6 +56,14 @@
     100% {left: calc(100vw * 950 / 1920); opacity: 1;}
 }
 
+@keyframes line10 {
+    0% {opacity: 0; width: 0;}
+    100% {width: calc(100vw * 115 / 1920); opacity: 1;}
+}
+
+@keyframes line11 {
+    0% {}
+}
 @keyframes line12 {
     0% {width: 0;}
     100% {width: 150px;}
