@@ -21,12 +21,12 @@ $(".contact-nav").click(function () {
 });
 
 // 마우스
-var element = document.getElementById("your-element-id");
+// var element = document.getElementById("my-element-id");
 
-element.addEventListener("mouseenter", function () {
-    element.classList.add("custom-cursor");
-});
+// element.addEventListener("mouseenter", function () {
+//     element.classList.add("custom-cursor");
+// });
 
-element.addEventListener("mouseleave", function () {
-    element.classList.remove("custom-cursor");
-});
+// element.addEventListener("mouseleave", function () {
+//     element.classList.remove("custom-cursor");
+// });

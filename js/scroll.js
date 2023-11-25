@@ -14,11 +14,11 @@ $(function () {
 
 // service1 영역 
 window.onscroll = function () {
-    // console.log(window.scrollY);
+    console.log(window.scrollY);
     progressBar();
 
     // service1 영역 타이틀,캐릭터 등장 및 제거
-    if (window.scrollY > 13620) {
+    if (window.scrollY > 11800) {
         $("#service1 .title_box").addClass("active");
         $("#service1 .main_box").addClass("active");
         // document.querySelector("#service1 .title_box").classList.add("active");
@@ -30,7 +30,7 @@ window.onscroll = function () {
         // document.querySelector("#service1 .main_box").classList.remove("active");
     }
     // service1 영역 첫번째 이미지 등장 및 제거
-    if (window.scrollY > 13897) {
+    if (window.scrollY > 125200) {
         $("#service1 .img_box .img1").addClass("active");
         $("#service1 .img_box .img2").addClass("active");
         $("#service1 .img_box .img3").addClass("active");
@@ -42,7 +42,7 @@ window.onscroll = function () {
         $("#service1 .img_box .img4").removeClass("active");
     }
     // service1 영역 오른쪽 타이틀, 캐릭터 등장 및 제거
-    if (window.scrollY > 14710) {
+    if (window.scrollY > 12700) {
         $("#service1 .right .title_box").addClass("active");
         $("#service1 .right .main_box").addClass("active");
         // document.querySelector("#service1 .right .title_box").classList.add("active");
@@ -220,3 +220,4 @@ function progressBar() {
     var scrolled = (winScroll / height) * 100;
     document.getElementsByClassName("progress-bar")[0].style.width = scrolled + "%";
 }
+
