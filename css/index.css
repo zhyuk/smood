@@ -1184,15 +1184,13 @@ header .nav-mobile span:nth-child(3) {
         line-height: 1.375;
         position: relative;
         z-index: 2;
-        opacity: 0;
-        top: 0;
         transition: all 1.5s;
 }
 
-section#service1 .main_box.active {
+/* section#service1 .main_box.active {
         animation: fade 1.5s forwards ease;
         top: 0;
-}
+} */
 
 section#service1 .main_box span {
         font-size: calc(100vw * 20 / 1920);
@@ -1243,7 +1241,7 @@ section#service1 .container {
 }
 
 section#service1 .container img {
-        width: calc(100vw * 350 / 1920);
+        width: calc(100vw * 330 / 1920);
         margin-left: calc(100vw * 20 / 1920);
 }
 
@@ -1255,7 +1253,7 @@ section#service1 .container .img_box img {
         position: relative;
 }
 
-section#service1 .container .img_box .img1 {
+/* section#service1 .container .img_box .img1 {
         margin-left: 0;
         left: calc(100vw * -400 / 1920);
 }
@@ -1270,9 +1268,9 @@ section#service1 .container .img_box .img3 {
 
 section#service1 .container .img_box .img4 {
         left: calc(100vw * -1700 / 1920);
-}
+} */
 
-section#service1 .container .img_box .img1.active {
+/* section#service1 .container .img_box .img1.active {
         animation: moveToRight 1s forwards;
 }
 
@@ -1286,7 +1284,7 @@ section#service1 .container .img_box .img3.active {
 
 section#service1 .container .img_box .img4.active {
         animation: moveToRight 2.5s forwards;
-}
+} */
 
 section#service1 .right {
         float: right;
@@ -1297,15 +1295,15 @@ section#service1 .right {
 section#service1 .right .title_box {
         padding-left: 0;
         padding-right: calc(100vw * 160 / 1920);
-        margin-top: calc(100vw * 150 / 1920);
+        /* margin-top: calc(100vw * 150 / 1920); */
         position: relative;
-        left: calc(100vw * 400 / 1920);
+        /* left: calc(100vw * 400 / 1920); */
         transition: all 1.2s;
 }
 
-section#service1 .right .title_box.active {
+/* section#service1 .right .title_box.active {
         left: 0;
-}
+} */
 
 section#service1 .right .main_box {
         margin-left: 0;
@@ -1313,14 +1311,14 @@ section#service1 .right .main_box {
         margin-top: calc(100vw * 150 / 1920);
         position: relative;
         opacity: 0;
-        top: 0;
+        /* top: 0; */
         transition: all 1.3s;
 
 }
 
 section#service1 .right .main_box.active {
         animation: fade 1.5s forwards ease;
-        top: calc(100vw * 100 / 1920);
+        /* top: calc(100vw * 100 / 1920); */
         opacity: 1;
 }
 
@@ -1339,7 +1337,7 @@ section#service1 .right .container {
         text-align: left;
 }
 
-section#service1 .img_box .img5 {
+/* section#service1 .img_box .img5 {
         right: calc(100vw * -1800 / 1920);
 }
 
@@ -1349,9 +1347,9 @@ section#service1 .img_box .img6 {
 
 section#service1 .img_box .img7 {
         right: calc(100vw * -900 / 1920);
-}
+} */
 
-section#service1 .img_box .img5.active {
+/* section#service1 .img_box .img5.active {
         animation: moveToLeft 2.5s forwards;
 }
 
@@ -1361,7 +1359,7 @@ section#service1 .img_box .img6.active {
 
 section#service1 .img_box .img7.active {
         animation: moveToLeft 1s forwards;
-}
+} */
 
 /* service2 */
 section#service2 {
@@ -1382,13 +1380,13 @@ section#service2 .title_box {
         display: inline-block;
         vertical-align: top;
         position: relative;
-        top: calc(100vw * -700 / 1920);
+        /* top: calc(100vw * -700 / 1920); */
         transition: all 1.2s;
 }
 
-section#service2 .title_box.active {
+/* section#service2 .title_box.active {
         top: 0;
-}
+} */
 
 section#service2 .main_box {
         width: calc(100vw * 600 / 1920);
@@ -1398,13 +1396,13 @@ section#service2 .main_box {
         line-height: 1.4;
         position: relative;
         z-index: 2;
-        top: calc(100vw * -500 / 1920);
+        /* top: calc(100vw * -500 / 1920); */
         transition: all 1.5s;
 }
 
-section#service2 .main_box.active {
+/* section#service2 .main_box.active {
         top: 0;
-}
+} */
 
 section#service2 .main_box span {
         font-size: calc(100vw * 20 / 1920);
@@ -1470,36 +1468,36 @@ section#service2 .container .main_img {
 
 section#service2 .container .line1 {
         top: calc(100vw * 450 / 1920);
-        width: 0;
+        /* width: 0; */
         left: calc(100vw * 420 / 1920);
         /* animation: line1 1s ease infinite; */
 
 }
 
-section#service2 .container .line1.active {
+/* section#service2 .container .line1.active {
         animation: line1 1s ease forwards;
-}
+} */
 
 section#service2 .container .img2 {
         top: calc(100vw * 60 / 1920);
         left: calc(100vw * 580 / 1920);
-        opacity: 0;
+        /* opacity: 0; */
         z-index: 2;
 }
 
-section#service2 .container .img2.active {
+/* section#service2 .container .img2.active {
         animation: fadeIn 1.5s forwards;
-}
+} */
 
 section#service2 .container .line2 {
         top: calc(100vw * 120 / 1920);
         left: calc(100vw * 880 / 1920);
-        width: 0;
+        /* width: 0; */
 }
 
-section#service2 .container .line2.active {
+/* section#service2 .container .line2.active {
         animation: line2 1.5s ease infinite;
-}
+} */
 
 section#service2 .container .text1 {
         width: calc(100vw * 430 / 1920);
@@ -1508,13 +1506,13 @@ section#service2 .container .text1 {
         top: calc(100vw * 125 / 1920);
         left: calc(100vw * 1050 / 1920);
         color: var(--color-black);
-        opacity: 0;
+        /* opacity: 0; */
 }
 
-section#service2 .container .text1.active {
+/* section#service2 .container .text1.active {
         animation: fadeIn 1.5s forwards;
         opacity: 1;
-}
+} */
 
 section#service2 .container .text1 h1 {
         font-size: calc(100vw * 25 / 1920);
@@ -1529,35 +1527,35 @@ section#service2 .container .text1 p {
 section#service2 .container .line3 {
         top: calc(100vw * 450 / 1920);
         left: calc(100vw * 880 / 1920);
-        width: 0;
+        /* width: 0; */
 }
 
-section#service2 .container .line3.active {
+/* section#service2 .container .line3.active {
         animation: line 1.5s ease-out forwards;
-}
+} */
 
 section#service2 .container .img3 {
         top: calc(100vw * 400 / 1920);
         left: calc(100vw * 1000 / 1920);
-        opacity: 0;
+        /* opacity: 0; */
         z-index: 2;
 }
 
-section#service2 .container .img3.active {
+/* section#service2 .container .img3.active {
         animation: fadeIn .8s forwards;
-}
+} */
 
 section#service2 .container .line4 {
         top: calc(100vw * 1030 / 1920);
         left: calc(100vw * 1150 / 1920);
         z-index: 1;
-        height: 0;
+        /* height: 0; */
 }
 
-section#service2 .container .line4.active {
+/* section#service2 .container .line4.active {
         animation: line4 1.5s ease forwards;
         animation-delay: 1.8s;
-}
+} */
 
 section#service2 .container .text2 {
         width: calc(100vw * 300 / 1920);
@@ -1566,13 +1564,13 @@ section#service2 .container .text2 {
         top: calc(100vw * 1090 / 1920);
         left: calc(100vw * 1220 / 1920);
         color: var(--color-black);
-        opacity: 0;
+        /* opacity: 0; */
 }
 
-section#service2 .container .text2.active {
+/* section#service2 .container .text2.active {
         animation: fadeIn 1.5s ease forwards;
         animation-delay: 1.3s;
-}
+} */
 
 section#service2 .container .text2 h1 {
         font-size: calc(100vw * 25 / 1920);
@@ -1587,50 +1585,50 @@ section#service2 .container .text2 p {
 section#service2 .container .line5 {
         top: calc(100vw * 1400 / 1920);
         left: calc(100vw * 390 / 1920);
-        width: 0;
+        /* width: 0; */
 }
 
-section#service2 .container .line5.active {
+/* section#service2 .container .line5.active {
         animation: line5 1.5s ease forwards;
-}
+} */
 
 section#service2 .container .img4 {
         top: calc(100vw * 1330 / 1920);
         left: calc(100vw * 730 / 1920);
-        opacity: 0;
+        /* opacity: 0; */
 }
 
-section#service2 .container .img4.active {
+/* section#service2 .container .img4.active {
         animation: opacity 1.3s forwards;
         animation-delay: 1.5s;
-}
+} */
 
 section#service2 .container .img5 {
         top: calc(100vw * 1330 / 1920);
         left: calc(100vw * 1080 / 1920);
-        opacity: 0;
+        /* opacity: 0; */
         z-index: 2;
 }
 
-section#service2 .container .img5.active {
+/* section#service2 .container .img5.active {
         animation: opacity 1.3s forwards;
         animation-delay: 2.8s;
-}
+} */
 
 section#service2 .container .line6 {
         top: calc(100vw * 1780 / 1920);
         left: calc(100vw * 1000 / 1920);
-        height: 0;
+        /* height: 0; */
 }
 
-section#service2 .container .line6.active {
+/* section#service2 .container .line6.active {
         animation: line6 1.5s forwards;
         animation-delay: 4.1s;
-}
+} */
 
 section#service2 .container .text3 {
         width: calc(100vw * 300 / 1920);
-        height: 0;
+        /* height: 0; */
         position: absolute;
         top: calc(100vw * 2050 / 1920);
         left: calc(100vw * 800 / 1920);
@@ -1638,10 +1636,10 @@ section#service2 .container .text3 {
         overflow: hidden;
 }
 
-section#service2 .container .text3.active {
+/* section#service2 .container .text3.active {
         animation: text3 1.5s forwards;
         animation-delay: 5.6s;
-}
+} */
 
 section#service2 .container .text3 h1 {
         font-size: calc(100vw * 25 / 1920);
@@ -1673,13 +1671,13 @@ section#service3 .title_box {
         display: inline-block;
         vertical-align: top;
         position: relative;
-        left: calc(100vw * 500 / 1920);
-        opacity: 0;
+        /* left: calc(100vw * 500 / 1920);
+        opacity: 0; */
 }
 
-section#service3 .title_box.active {
+/* section#service3 .title_box.active {
         animation: moveToRight 1.2s forwards;
-}
+} */
 
 section#service3 .main_box {
         width: calc(100vw * 600 / 1920);
@@ -1689,13 +1687,13 @@ section#service3 .main_box {
         line-height: 1.375;
         position: relative;
         z-index: 2;
-        left: calc(100vw * 600 / 1920);
-        opacity: 0;
+        /* left: calc(100vw * 600 / 1920);
+        opacity: 0; */
 }
 
-section#service3 .main_box.active {
+/* section#service3 .main_box.active {
         animation: moveToRight 1.2s forwards;
-}
+} */
 
 section#service3 .main_box span {
         font-size: calc(100vw * 20 / 1920);
@@ -1736,7 +1734,7 @@ section#service3 .container img {
         position: relative;
 }
 
-section#service3 .container .img1 {
+/* section#service3 .container .img1 {
         margin-left: calc(100vw * 180 / 1920);
         left: calc(100vw * -800 / 1920);
 }
@@ -1747,9 +1745,9 @@ section#service3 .container .img2 {
 
 section#service3 .container .img3 {
         left: calc(100vw * -1600 / 1920);
-}
+} */
 
-section#service3 .container .img1.active {
+/* section#service3 .container .img1.active {
         animation: moveToRight 2s forwards;
 }
 
@@ -1759,32 +1757,32 @@ section#service3 .container .img2.active {
 
 section#service3 .container .img3.active {
         animation: moveToRight 3s forwards;
-}
+} */
 
 section#service3 .container .line7 {
         position: absolute;
         top: calc(100vw * 610 / 1920);
         left: calc(100vw * 180 / 1920);
-        height: 0;
+        /* height: 0; */
         z-index: -1;
 }
 
-section#service3 .container .line7.active {
+/* section#service3 .container .line7.active {
         animation: line7 1.5s ease forwards;
         animation-delay: 1.5s;
-}
+} */
 
 section#service3 .container .line8 {
         position: absolute;
         top: calc(100vw * 350 / 1920);
-        left: calc(100vw * 1130 / 1920);
-        width: 0;
+        left: calc(100vw * 990 / 1920);
+        /* width: 0; */
 }
 
-section#service3 .container .line8.active {
+/* section#service3 .container .line8.active {
         animation: line 1.8s ease forwards;
         animation-delay: 3s;
-}
+} */
 
 section#service3 .container .text1 {
         width: calc(100vw * 250 / 1920);
@@ -1794,13 +1792,13 @@ section#service3 .container .text1 {
         left: calc(100vw * -80 / 1920);
         color: var(--color-black);
         text-align: right;
-        opacity: 0;
+        /* opacity: 0; */
 }
 
-section#service3 .container .text1.active {
+/* section#service3 .container .text1.active {
         animation: fadeIn 1.5s forwards;
         animation-delay: 2.3s;
-}
+} */
 
 section#service3 .container .text1 h1 {
         font-size: calc(100vw * 20 / 1920);
@@ -1817,15 +1815,15 @@ section#service3 .container .text2 {
         height: calc(100vw * 220 / 1920);
         position: absolute;
         top: calc(100vw * 360 / 1920);
-        left: calc(100vw * 1380 / 1920);
+        left: calc(100vw * 1200 / 1920);
         color: var(--color-black);
-        opacity: 0;
+        /* opacity: 0; */
 }
 
-section#service3 .container .text2.active {
+/* section#service3 .container .text2.active {
         animation: fadeIn 1.5s forwards;
         animation-delay: 3.3s;
-}
+} */
 
 section#service3 .container .text2 h1 {
         font-size: calc(100vw * 20 / 1920);
@@ -1847,28 +1845,28 @@ section#service3 .right .title_box {
         padding-left: 0;
         padding-right: calc(100vw * 115 / 1920);
         margin-top: calc(100vw * 150 / 1920);
-        left: calc(100vw * 500 / 1920);
-        opacity: 0;
+        /* left: calc(100vw * 500 / 1920); */
+        /* opacity: 0; */
 }
 
 section#service3 .right .main_box {
         margin-left: 0;
         margin-right: calc(100vw * 75 / 1920);
         margin-top: 150px;
-        left: calc(100vw * 600 / 1920);
-        opacity: 0;
+        /* left: calc(100vw * 600 / 1920); */
+        /* opacity: 0; */
 }
 
 section#service3 .container .line9 {
         position: absolute;
         top: calc(100vw * 580 / 1920);
-        left: calc(100vw * 1300 / 1920);
-        opacity: 0;
+        left: calc(100vw * 950 / 1920);
+        /* opacity: 0; */
 }
 
-section#service3 .container .line9.active {
+/* section#service3 .container .line9.active {
         animation: line9 1.5s forwards;
-}
+} */
 
 section#service3 .container .text3 {
         width: calc(100vw * 200 / 1920);
@@ -1878,12 +1876,12 @@ section#service3 .container .text3 {
         left: calc(100vw * 730 / 1920);
         color: var(--color-black);
         text-align: right;
-        opacity: 0;
+        /* opacity: 0; */
 }
 
-section#service3 .container .text3.active {
+/* section#service3 .container .text3.active {
         animation: fadeIn 1.5s forwards;
-}
+} */
 
 section#service3 .container .text3 h1 {
         font-size: calc(100vw * 20 / 1920);
@@ -1898,45 +1896,46 @@ section#service3 .container .text3 p {
 section#service3 .container .function_img {
         margin-top: calc(100vw * 180 / 1920);
         width: calc(100vw * 300 / 1920);
-        opacity: 0;
+        right: calc(100vw * 0 / 1920);
 }
 
-section#service3 .container .function_img:nth-child(1) {
-        right: calc(100vw * -1200 / 1920);
-}
+/* section#service3 .container .function_img:nth-child(1) {
+        right: calc(100vw * 0 / 1920);
+} */
 
-section#service3 .container .function_img:nth-child(1).active {
+/* section#service3 .container .function_img:nth-child(1).active {
         animation: moveToLeft 1.5s ease forwards;
         animation-delay: 1.5s;
-}
+} */
 
-section#service3 .container .function_img:nth-child(2) {
+/* section#service3 .container .function_img:nth-child(2) {
         right: calc(100vw * -870 / 1920);
-}
+} */
 
-section#service3 .container .function_img:nth-child(2).active {
+/* section#service3 .container .function_img:nth-child(2).active {
         animation: moveToLeft 1.5s ease forwards;
         animation-delay: 1s;
-}
+} */
 
-section#service3 .container .function_img:nth-child(3) {
+/* section#service3 .container .function_img:nth-child(3) {
         right: calc(100vw * -540 / 1920);
-}
+} */
 
-section#service3 .container .function_img:nth-child(3).active {
+/* section#service3 .container .function_img:nth-child(3).active {
         animation: moveToLeft 1.5s ease forwards;
         animation-delay: .5s;
-}
+} */
 
 section#service3 .container .main_img {
         position: absolute;
-        right: calc(100vw * -800 / 1920);
+        right: 0;
+        /* right: calc(100vw * -800 / 1920); */
         z-index: 2;
 }
 
-section#service3 .container .main_img.active {
+/* section#service3 .container .main_img.active {
         animation: moveToLeft 1.5s ease forwards;
-}
+} */
 
 /* service4 */
 section#service4 {
@@ -1955,13 +1954,13 @@ section#service4 .bg_box {
         background-color: var(--color-orange);
         position: absolute;
         z-index: 3;
-        left: calc(100vw * -700 / 1920);
+        /* left: calc(100vw * -700 / 1920); */
         transition: all 1.6s;
 }
 
-section#service4 .bg_box.active {
+/* section#service4 .bg_box.active {
         left: 0;
-}
+} */
 
 section#service4 .bg_box .character_box,
 section#service4 .bg_box_right .character_box {
@@ -1986,13 +1985,13 @@ section#service4 .title_box {
         font-size: calc(100vw * 50 / 1920);
         border-bottom: 1px solid var(--color-orange);
         vertical-align: top;
-        opacity: 0;
+        /* opacity: 0; */
         transition: all 1.8s;
 }
 
-section#service4 .title_box.active {
+/* section#service4 .title_box.active {
         opacity: 1;
-}
+} */
 
 section#service4 .main_box {
         display: inline-block;
@@ -2001,13 +2000,13 @@ section#service4 .main_box {
         margin-top: calc(100vw * 330 / 1920);
         line-height: 1.375;
         position: relative;
-        opacity: 0;
+        /* opacity: 0; */
         transition: all 1.3s;
 }
 
-section#service4 .main_box.active {
+/* section#service4 .main_box.active {
         opacity: 1;
-}
+} */
 
 section#service4 .main_box span {
         font-size: calc(100vw * 20 / 1920);
@@ -2032,13 +2031,13 @@ section#service4 .container {
 section#service4 .container img {
         width: calc(100vw * 300 / 1920);
         margin-left: calc(100vw * 80 / 1920);
-        opacity: 0;
+        /* opacity: 0; */
         z-index: 2;
 }
 
-section#service4 .container img.active {
+/* section#service4 .container img.active {
         animation: fadeIn 2s ease forwards;
-}
+} */
 
 section#service4 .container img:nth-of-type(1) {
         margin-left: calc(100vw * 410 / 1920);
@@ -2052,22 +2051,22 @@ section#service4 .container svg {
 section#service4 .container .line10 {
         top: calc(100vw * 460 / 1920);
         left: calc(100vw * 280 / 1920);
-        width: 0;
+        /* width: 0; */
 }
 
-section#service4 .container .line10.active {
+/* section#service4 .container .line10.active {
         animation: line10 2s ease forwards;
-}
+} */
 
 section#service4 .container .line11 {
         top: calc(100vw * 350 / 1920);
         left: calc(100vw * 1100 / 1920);
-        width: 0;
+        /* width: 0; */
 }
 
-section#service4 .container .line11.active {
+/* section#service4 .container .line11.active {
         animation: line11 2s ease forwards;
-}
+} */
 
 section#service4 .container .text1 {
         width: calc(100vw * 380 / 1920);
@@ -2078,7 +2077,7 @@ section#service4 .container .text1 {
         position: absolute;
         top: calc(100vw * 475 / 1920);
         left: calc(100vw * -85 / 1920);
-        opacity: 0;
+        /* opacity: 0; */
 }
 
 section#service4 .container .text1 h1,
@@ -2100,7 +2099,7 @@ section#service4 .container .text2 {
         position: absolute;
         top: calc(100vw * 365 / 1920);
         left: calc(100vw * 1210 / 1920);
-        opacity: 0;
+        /* opacity: 0; */
 }
 
 section#service4 .bg_box_right {
@@ -2109,17 +2108,17 @@ section#service4 .bg_box_right {
         margin-top: calc(100vw * 165 / 1920);
         background-color: var(--color-orange);
         position: absolute;
-        right: calc(100vw * -500 / 1920);
+        /* right: calc(100vw * -500 / 1920); */
         z-index: 3;
         transition: all 2s;
 }
 
-section#service4 .bg_box_right.active {
+/* section#service4 .bg_box_right.active {
         right: calc(100vw * 0 / 1920);
-}
+} */
 
 section#service4 .bg_box_right .character_box {
-        left: 0;
+        /* left: 0; */
         right: calc(100vw * 140 / 1920);
         z-index: 2;
 }
@@ -2132,24 +2131,24 @@ section#service4 .right {
 section#service4 .title_box.right {
         padding-left: 0;
         padding-right: calc(100vw * 260 / 1920);
-        opacity: 0;
+        /* opacity: 0; */
         transition: all 1.8s;
 }
 
-section#service4 .title_box.right.active {
+/* section#service4 .title_box.right.active {
         opacity: 1;
-}
+} */
 
 section#service4 .main_box.right {
         margin-left: 0;
         margin-right: calc(100vw * 75 / 1920);
-        opacity: 0;
+        /* opacity: 0; */
         transition: all 2.3s;
 }
 
-section#service4 .main_box.right.active {
+/* section#service4 .main_box.right.active {
         opacity: 1;
-}
+} */
 
 section#service4 .main_box.right span.check {
         background-color: var(--color-orange);
@@ -2161,37 +2160,37 @@ section#service4 .container img.container2-img {
         width: calc(100vw * 300 / 1920);
         margin-left: 0;
         z-index: 2;
-        opacity: 0;
+        /* opacity: 0; */
 }
 
-section#service4 .container img.container2-img.active {
+/* section#service4 .container img.container2-img.active {
         animation: fadeIn 2s ease forwards;
-}
+} */
 
 section#service4 .container .line12 {
         position: absolute;
         top: calc(100vw * 650 / 1920);
         left: calc(100vw * 300 / 1920);
-        width: 0;
+        /* width: 0; */
 }
 
-section#service4 .container .line12.active {
+/* section#service4 .container .line12.active {
         animation: line12 1s ease forwards;
         animation-delay: 1.6s;
-}
+} */
 
 section#service4 .container img.mockup-img {
         width: calc(100vw * 420 / 1920);
         margin-left: calc(100vw * 155 / 1920);
         margin-top: calc(100vw * 35 / 1920);
         z-index: 2;
-        opacity: 0;
+        /* opacity: 0; */
 }
 
-section#service4 .container img.mockup-img.active {
+/* section#service4 .container img.mockup-img.active {
         animation: fadeIn 2s ease forwards;
         animation-delay: 1s;
-}
+} */
 
 section#service4 .container img.mockup-fnc {
         width: calc(100vw * 645 / 1920);
@@ -2199,37 +2198,37 @@ section#service4 .container img.mockup-fnc {
         top: calc(100vw * 365 / 1920);
         left: calc(100vw * 405 / 1920);
         z-index: 3;
-        opacity: 0;
+        /* opacity: 0; */
 }
 
-section#service4 .container img.mockup-fnc.active {
+/* section#service4 .container img.mockup-fnc.active {
         animation: fadeIn 1.4s ease forwards;
         animation-delay: 2s;
-}
+} */
 
 section#service4 .container .line13 {
         position: absolute;
         top: calc(100vw * 560 / 1920);
         left: calc(100vw * 930 / 1920);
-        height: 0;
+        /* height: 0; */
 }
 
-section#service4 .container .line13.active {
+/* section#service4 .container .line13.active {
         animation: line13 2.5s ease-in forwards;
         animation-delay: 2.5s;
-}
+} */
 
 section#service4 .container .img6 {
         position: absolute;
         top: calc(100vw * 450 / 1920);
         left: calc(100vw * 1080 / 1920);
-        opacity: 0;
+        /* opacity: 0; */
 }
 
-section#service4 .container .img6.active {
+/* section#service4 .container .img6.active {
         animation: fadeIn 2s ease forwards;
         animation-delay: 3s;
-}
+} */
 
 /* service5 */
 section#service5 {
@@ -2243,14 +2242,15 @@ section#service5 article .bg_box {
         height: calc(100vw * 35 / 1920);
         background-color: var(--color-orange);
         position: absolute;
+        top: calc(100vw * 150 / 1920);
         z-index: 3;
-        opacity: 0;
+        /* opacity: 0; */
 }
 
-section#service5 .bg_box.active {
+/* section#service5 .bg_box.active {
         opacity: 1;
         top: calc(100vw * 150 / 1920);
-}
+} */
 
 section#service5 .bg_box .character_box {
         width: calc(100vw * 260 / 1920);
